@@ -1,0 +1,5 @@
+select *
+from
+sys.procedures
+where
+name like '%^%'

@@ -1,0 +1,1 @@
+select DATEDIFF(day,GETDATE(),'2020-07-20')

@@ -1,0 +1,9 @@
+Declare @CertNo varchar(50) = '^'
+
+
+delete from tbl_MGP_Summ_Charges where CaseNo in (select CaseNo from tbl_mgp_cases where MemberID = @CertNo)
+delete from tbl_MGP_Cases_LOA where CaseNo in (select CaseNo from tbl_mgp_cases where MemberID = @CertNo)
+delete from tbl_MGP_Cases_Notes where CaseNo in (select CaseNo from tbl_mgp_cases where MemberID = @CertNo)
+delete from tbl_MGP_Cases_Progress where CaseNo in (select CaseNo from tbl_mgp_cases where MemberID = @CertNo) 
+delete from tbl_mgp_cASES_JV where ClaimNo in (select CaseNo from tbl_mgp_cases where MemberID = @CertNo)
+delete from tbl_mgp_cases where MemberID = @CertNo

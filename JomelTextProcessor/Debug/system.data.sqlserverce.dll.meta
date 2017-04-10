@@ -1,0 +1,2449 @@
+  System.Data.SqlServerCe.resources - Embedded, ContainedInManifestFile, 
+Assembly System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Class System.Data.SqlServerCe.SqlCeVersion: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String ProductName = Microsoft SQL Server Compact Edition : Assembly, Static, Literal, HasDefault
+    Int32 ProductMajor = 3 : Assembly, Static, Literal, HasDefault
+    Int32 ProductMinor = 5 : Assembly, Static, Literal, HasDefault
+    Int32 VersionSuffix = 35 : Assembly, Static, Literal, HasDefault
+    Int32 BuildMajor = 8080 : Assembly, Static, Literal, HasDefault
+    Int32 BuildMinor = 0 : Assembly, Static, Literal, HasDefault
+    Int32 ServicePackLevel = 2 : Assembly, Static, Literal, HasDefault
+    System.String ProductVersion = 3.5 : Assembly, Static, Literal, HasDefault
+    System.String FileVersion = 3.5.8080.0 : Assembly, Static, Literal, HasDefault
+    System.String PrivateAssemblyVersion = 3.5.1.50 : Assembly, Static, Literal, HasDefault
+    System.String CustomAssemblyVersion = 3.5.1.0 : Assembly, Static, Literal, HasDefault
+    System.String FixedAssemblyVersion = 3.5.0.0 : Assembly, Static, Literal, HasDefault
+    System.String AssemblyVersion = 3.5.1.0 : Assembly, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.Accessor: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Boolean doTruncate : Assembly
+    System.Type SByteType : Assembly, Static, InitOnly
+    System.Type Int16Type : Assembly, Static, InitOnly
+    System.Type Int32Type : Assembly, Static, InitOnly
+    System.Type Int64Type : Assembly, Static, InitOnly
+    System.Type ByteType : Assembly, Static, InitOnly
+    System.Type SingleType : Assembly, Static, InitOnly
+    System.Type DoubleType : Assembly, Static, InitOnly
+    System.Type StringType : Assembly, Static, InitOnly
+    System.Type GuidType : Assembly, Static, InitOnly
+  Properties:
+    System.Data.SqlServerCe.MEDBBINDING[] DbBinding 'get ' : 
+    IntPtr DataHandle 'get ' : 
+    Int32 Count 'get ' : 
+    Int32 NumValues 'set' : 
+    Int32 CurrentIndex 'get set' : 
+    Int32 DataBufferSize 'get ' : 
+    Int32 ActualDataBufferSize 'set' : 
+    Int32 Ordinal 'set' : 
+    System.String ColumnName 'get set' : 
+    IntPtr ObjectPtr 'set' : 
+    Int32 MaxLen 'get set' : 
+    System.Data.SqlServerCe.SETYPE SeType 'get set' : 
+    Byte Precision 'get set' : 
+    Byte Scale 'get set' : 
+    Int32 SizeValue 'get set' : 
+    System.Data.SqlServerCe.DBStatus StatusValue 'get set' : 
+    System.Object Value 'get set' : 
+  Methods:
+    Dispose(): PrivateScope, Assembly, HideBySig
+    get_DbBinding(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_DataHandle(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Count(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_NumValues(Int32): PrivateScope, Assembly, HideBySig, SpecialName
+    get_CurrentIndex(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_CurrentIndex(Int32): PrivateScope, Assembly, HideBySig, SpecialName
+    get_DataBufferSize(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_ActualDataBufferSize(Int32): PrivateScope, Assembly, HideBySig, SpecialName
+    AllocData(): PrivateScope, Assembly, HideBySig
+    set_Ordinal(Int32): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ColumnName(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_ColumnName(String): PrivateScope, Assembly, HideBySig, SpecialName
+    set_ObjectPtr(IntPtr): PrivateScope, Assembly, HideBySig, SpecialName
+    get_MaxLen(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_MaxLen(Int32): PrivateScope, Assembly, HideBySig, SpecialName
+    get_SeType(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_SeType(SETYPE): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Precision(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_Precision(Byte): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Scale(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_Scale(Byte): PrivateScope, Assembly, HideBySig, SpecialName
+    get_SizeValue(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_SizeValue(Int32): PrivateScope, Assembly, HideBySig, SpecialName
+    get_StatusValue(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_StatusValue(DBStatus): PrivateScope, Assembly, HideBySig, SpecialName
+    SetValueDBNull(): PrivateScope, Assembly, HideBySig
+    SetValueNull(): PrivateScope, Assembly, HideBySig
+    get_Value(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_Value(Object): PrivateScope, Assembly, HideBySig, SpecialName
+Class System.Data.SqlServerCe.SqlCeUtil: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String ProductName = Microsoft SQL Server Compact : Assembly, Static, Literal, HasDefault
+    System.String ProductRootRegKey = Software\Microsoft\Microsoft SQL Server Compact Edition\v3.5 : Assembly, Static, Literal, HasDefault
+    System.String Product35RootRegKey = SOFTWARE\Microsoft\Microsoft SQL Server Compact Edition\v3.5 : Assembly, Static, Literal, HasDefault
+    System.String ProductProxyPortsRegKey = Software\Microsoft\Windows CE Services\ProxyPorts : Assembly, Static, Literal, HasDefault
+    System.String NetCFKey = Software\Microsoft\.NetCompactFramework\Installer\Assemblies\Global : Assembly, Static, Literal, HasDefault
+    System.String ProviderName = Sql Server Compact ADO.NET Data Provider : Assembly, Static, Literal, HasDefault
+    System.String ProductServicingFile = Microsoft.SqlServer.Compact.351.{0}.bc : Assembly, Static, Literal, HasDefault
+    System.String ModuleStorageEngine = sqlcese35.dll : Assembly, Static, Literal, HasDefault
+    System.String ModuleStorageEngineSys = sqlcese35.sys.dll : Assembly, Static, Literal, HasDefault
+    System.String ModuleQueryProcessor = sqlceqp35.dll : Assembly, Static, Literal, HasDefault
+    System.String ModuleClientAgent = sqlceca35.dll : Assembly, Static, Literal, HasDefault
+    System.String ModuleOleDbProvider = sqlceoledb35.dll : Assembly, Static, Literal, HasDefault
+    System.String ModuleManagedExtentions = sqlceme35.dll : Assembly, Static, Literal, HasDefault
+    System.String ModuleDbCompact = sqlcecompact35.dll : Assembly, Static, Literal, HasDefault
+    System.String ModuleErrRes = sqlceer35{0}.dll : Assembly, Static, Literal, HasDefault
+    System.String ModuleServerAgent = sqlcesa35.dll : Assembly, Static, Literal, HasDefault
+    System.String ModuleReplicationProvider = sqlcerp35.dll : Assembly, Static, Literal, HasDefault
+    System.String ModuleTdsServer = tdsserver35.exe : Assembly, Static, Literal, HasDefault
+  Methods:
+    RegistryOpenSubKey(RegistryKey, String, Boolean): PrivateScope, Assembly, Static, HideBySig
+    RegistryOpenProductRootKey(RegistryKey, Boolean): PrivateScope, Assembly, Static, HideBySig
+    RegistryOpenProductRootSubKey(RegistryKey, String, Boolean): PrivateScope, Assembly, Static, HideBySig
+    RegistryCreateProductRootKey(RegistryKey): PrivateScope, Assembly, Static, HideBySig
+    RegistryCreateProductRootSubKey(RegistryKey, String): PrivateScope, Assembly, Static, HideBySig
+    GetModuleInstallPath(String): PrivateScope, Assembly, Static, HideBySig
+Class System.Data.SqlServerCe.SqlCeServicing: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    DoBreadcrumbServicing(String): PrivateScope, Assembly, Static, HideBySig
+Class System.Data.SqlServerCe.ConStringUtil: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Fields:
+    System.String EM_ENGINE_DEFAULT_KEY = engine default : Assembly, Static, Literal, HasDefault
+    System.String EM_PLATFORM_DEFAULT_KEY = platform default : Assembly, Static, Literal, HasDefault
+    System.String EM_PPC2003_COMPATIBILITY_KEY = ppc2003 compatibility : Assembly, Static, Literal, HasDefault
+    System.String DATA_SOURCE_KEY = data source : Assembly, Static, Literal, HasDefault
+    System.String LCID_KEY = locale identifier : Assembly, Static, Literal, HasDefault
+    System.String PERSIST_SECURITY_INFO_KEY = persist security info : Assembly, Static, Literal, HasDefault
+    System.String PASSWORD_KEY = ssce:database password : Assembly, Static, Literal, HasDefault
+    System.String ENCRYPT_DB_KEY = ssce:encrypt database : Assembly, Static, Literal, HasDefault
+    System.String ENLIST_KEY = ssce:enlist : Assembly, Static, Literal, HasDefault
+    System.String ENCRYPTION_MODE_KEY = ssce:encryption mode : Assembly, Static, Literal, HasDefault
+    System.String MAX_BUFFER_SIZE_KEY = ssce:max buffer size : Assembly, Static, Literal, HasDefault
+    System.String TEMP_FILE_DIR_KEY = ssce:temp file directory : Assembly, Static, Literal, HasDefault
+    System.String TEMP_FILE_MAX_SIZE_KEY = ssce:temp file max size : Assembly, Static, Literal, HasDefault
+    System.String AUTO_SHRINK_THRESHOLD_KEY = ssce:autoshrink threshold : Assembly, Static, Literal, HasDefault
+    System.String FLUSH_INTERVAL_KEY = ssce:flush interval : Assembly, Static, Literal, HasDefault
+    System.String MAX_DATABASE_SIZE_KEY = ssce:max database size : Assembly, Static, Literal, HasDefault
+    System.String DEFAULT_LOCK_ESCALATION_KEY = ssce:default lock escalation : Assembly, Static, Literal, HasDefault
+    System.String DEFAULT_LOCK_TIMEOUT_KEY = ssce:default lock timeout : Assembly, Static, Literal, HasDefault
+    System.String MODE_KEY = ssce:mode : Assembly, Static, Literal, HasDefault
+    System.String CASE_SENSITIVE_KEY = ssce:case sensitive : Assembly, Static, Literal, HasDefault
+    System.String CASE_SENSITIVE_SYNONYM = case sensitive : Assembly, Static, Literal, HasDefault
+    System.String ENCRYPTION_MODE_SYNONYM = encryption mode : Assembly, Static, Literal, HasDefault
+    System.String PWD_SYNONYM = pwd : Assembly, Static, Literal, HasDefault
+    System.String PASSWORD_SYNONYM = password : Assembly, Static, Literal, HasDefault
+    System.String READ_ONLY = read only : Assembly, Static, Literal, HasDefault
+    System.String READ_WRITE = read write : Assembly, Static, Literal, HasDefault
+    System.String EXCLUSIVE = exclusive : Assembly, Static, Literal, HasDefault
+    System.String SHARED_READ = shared read : Assembly, Static, Literal, HasDefault
+    System.String DATADIRECTORY_MACRO = |DataDirectory| : Assembly, Static, Literal, HasDefault
+    System.String DATADIRECTORY = DataDirectory : Assembly, Static, Literal, HasDefault
+    System.String DATA_SOURCE =  : Assembly, Static, Literal, HasDefault
+    System.String PASSWORD =  : Assembly, Static, Literal, HasDefault
+    Boolean PERSIST_SECURITY_INFO = False : Assembly, Static, Literal, HasDefault
+    Boolean ENLIST = True : Assembly, Static, Literal, HasDefault
+  Methods:
+    NullConnectionOptionsTable(): PrivateScope, Assembly, Static, HideBySig
+    DefaultConnectionOptionsTable(): PrivateScope, Assembly, Static, HideBySig
+    RemoveKeyValuesFromString(String, String): PrivateScope, Assembly, Static, HideBySig
+    ParseConnectionString(String&): PrivateScope, Assembly, Static, HideBySig
+    MapEncryptionMode(String): PrivateScope, Assembly, Static, HideBySig
+Class System.Data.SqlServerCe.ADP: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Fields:
+    System.Object EventRowUpdated : Assembly, Static, InitOnly
+    System.Object EventRowUpdating : Assembly, Static, InitOnly
+    System.Object EventInfoMessage : Assembly, Static, InitOnly
+    System.Object EventStateChange : Assembly, Static, InitOnly
+    System.Object EventFlushFailure : Assembly, Static, InitOnly
+    Int32 SizeOf_tagDBOBJECT : Assembly, Static, InitOnly
+    System.Guid IID_ISequentialStream : Assembly, Static, InitOnly
+    System.Guid IID_ILockBytes : Assembly, Static, InitOnly
+    Int32 MaxConnectionStringCacheSize = 250 : Assembly, Static, Literal, HasDefault
+    System.String BeginTransaction = BeginTransaction : Assembly, Static, Literal, HasDefault
+    System.String CommandSetEnlistedConnection = set_Connection : Assembly, Static, Literal, HasDefault
+    System.String GetDatabaseInfo = GetDatabaseInfo : Assembly, Static, Literal, HasDefault
+    System.String ChangeDatabase = ChangeDatabase : Assembly, Static, Literal, HasDefault
+    System.String Cancel = Cancel : Assembly, Static, Literal, HasDefault
+    System.String Clone = Clone : Assembly, Static, Literal, HasDefault
+    System.String CommitTransaction = CommitTransaction : Assembly, Static, Literal, HasDefault
+    System.String ConnectionString = ConnectionString : Assembly, Static, Literal, HasDefault
+    System.String DataSetColumn = DataSetColumn : Assembly, Static, Literal, HasDefault
+    System.String DataSetTable = DataSetTable : Assembly, Static, Literal, HasDefault
+    System.String Delete = Delete : Assembly, Static, Literal, HasDefault
+    System.String DeleteCommand = DeleteCommand : Assembly, Static, Literal, HasDefault
+    System.String DeriveParameters = DeriveParameters : Assembly, Static, Literal, HasDefault
+    System.String ExecuteReader = ExecuteReader : Assembly, Static, Literal, HasDefault
+    System.String ExecuteNonQuery = ExecuteNonQuery : Assembly, Static, Literal, HasDefault
+    System.String ExecuteTableDirect = ExecuteTableDirect : Assembly, Static, Literal, HasDefault
+    System.String ExecuteScalar = ExecuteScalar : Assembly, Static, Literal, HasDefault
+    System.String ExecuteXmlReader = ExecuteXmlReader : Assembly, Static, Literal, HasDefault
+    System.String ExecuteResultSet = ExecuteResultSet : Assembly, Static, Literal, HasDefault
+    System.String Fill = Fill : Assembly, Static, Literal, HasDefault
+    System.String FillSchema = FillSchema : Assembly, Static, Literal, HasDefault
+    System.String GetBytes = GetBytes : Assembly, Static, Literal, HasDefault
+    System.String GetChars = GetChars : Assembly, Static, Literal, HasDefault
+    System.String Insert = Insert : Assembly, Static, Literal, HasDefault
+    System.String Parameter = Parameter : Assembly, Static, Literal, HasDefault
+    System.String ParameterName = ParameterName : Assembly, Static, Literal, HasDefault
+    System.String ParameterIndex = ParameterIndex : Assembly, Static, Literal, HasDefault
+    System.String Prepare = Prepare : Assembly, Static, Literal, HasDefault
+    System.String Remove = Remove : Assembly, Static, Literal, HasDefault
+    System.String RollbackTransaction = RollbackTransaction : Assembly, Static, Literal, HasDefault
+    System.String SaveTransaction = SaveTransaction : Assembly, Static, Literal, HasDefault
+    System.String Select = Select : Assembly, Static, Literal, HasDefault
+    System.String SelectCommand = SelectCommand : Assembly, Static, Literal, HasDefault
+    System.String SourceColumn = SourceColumn : Assembly, Static, Literal, HasDefault
+    System.String SourceVersion = SourceVersion : Assembly, Static, Literal, HasDefault
+    System.String SourceTable = SourceTable : Assembly, Static, Literal, HasDefault
+    System.String Update = Update : Assembly, Static, Literal, HasDefault
+    System.String UpdateCommand = UpdateCommand : Assembly, Static, Literal, HasDefault
+    System.String sysTableTombstone = __sysOCSDeletedRows : Assembly, Static, Literal, HasDefault
+    System.String sysContextColumn = __sysTrackingContext : Assembly, Static, Literal, HasDefault
+    System.String sysTableCommitSequence = __sysTxCommitSequence : Assembly, Static, Literal, HasDefault
+    System.String sysTableTrackedObjects = __sysOCSTrackedObjects : Assembly, Static, Literal, HasDefault
+    Int32 DecimalScaleOfMoney = 4 : Assembly, Static, Literal, HasDefault
+    System.String sysTableSyncArticles = __sysSyncArticles : Assembly, Static, Literal, HasDefault
+    System.String sysTableSyncSubscriptions = __sysSyncSubscriptions : Assembly, Static, Literal, HasDefault
+    Int32 DB_E_BADBOOKMARK = -2147217906 : Assembly, Static, Literal, HasDefault
+    Int32 DB_E_DELETEDROW = -2147217885 : Assembly, Static, Literal, HasDefault
+    Int32 DB_E_NOTFOUND = -2147217895 : Assembly, Static, Literal, HasDefault
+    Int32 SSCE_M_LOCKTIMEOUT = 25090 : Assembly, Static, Literal, HasDefault
+    Int32 SSCE_M_PENDINGUPDATE = 25126 : Assembly, Static, Literal, HasDefault
+    Int32 SSCE_M_DBUPGRADENEEDED = 25138 : Assembly, Static, Literal, HasDefault
+    Int32 SSCE_M_NOCURRENTRECORD = 25001 : Assembly, Static, Literal, HasDefault
+    Int32 SSCE_M_COLUMNORDINALNOTFOUND = 28527 : Assembly, Static, Literal, HasDefault
+    Int32 SSCE_M_MANAGEDEXCEPTION = 27772 : Assembly, Static, Literal, HasDefault
+    Int32 SSCE_M_TRANSACTIONABORTED = 27776 : Assembly, Static, Literal, HasDefault
+    Int32 SSCE_M_TABLENOTTRACKED = 28543 : Assembly, Static, Literal, HasDefault
+    Int32 SQLCE_WrongTrackingVersion = 30001 : Assembly, Static, Literal, HasDefault
+    Int32 SQLCE_WrongCleanupSequence = 30002 : Assembly, Static, Literal, HasDefault
+    Int32 MAX_PARAMETER_NAME_LENGTH = 128 : Assembly, Static, Literal, HasDefault
+    Int32 ExecutedQuery = 1 : Assembly, Static, Literal, HasDefault
+    Int32 ExecutedNonQuery = 2 : Assembly, Static, Literal, HasDefault
+    Int32 SchemaOnly = 3 : Assembly, Static, Literal, HasDefault
+    Int16 VARIANT_TRUE = -1 : Assembly, Static, Literal, HasDefault
+    Int16 VARIANT_FALSE = 0 : Assembly, Static, Literal, HasDefault
+    Int32 TRUE = 1 : Assembly, Static, Literal, HasDefault
+    Int32 FALSE = 0 : Assembly, Static, Literal, HasDefault
+    Int32 DBACCESSOR_ROWDATA = 2 : Assembly, Static, Literal, HasDefault
+    Int32 DBACCESSOR_PARAMETERDATA = 4 : Assembly, Static, Literal, HasDefault
+    Int32 S_OK = 0 : Assembly, Static, Literal, HasDefault
+    Int32 SESETCOLUMN_DEFAULT = 2 : Assembly, Static, Literal, HasDefault
+    Int32 E_FAIL = -2147467259 : Assembly, Static, Literal, HasDefault
+    System.Globalization.CompareOptions compareOptions = 25 : Assembly, Static, Literal, HasDefault
+  Methods:
+    IntPtrOffset(IntPtr, Int32): PrivateScope, Assembly, Static, HideBySig
+    SrcCompare(String, String): PrivateScope, Assembly, Static, HideBySig
+    IsEmpty(String): PrivateScope, Assembly, Static, HideBySig
+    IsAlive(WeakReference): PrivateScope, Assembly, Static, HideBySig
+    IsCatchableExceptionType(Exception): PrivateScope, Assembly, Static, HideBySig
+    GetTablePrimaryKey(String, SqlCeConnection): PrivateScope, Assembly, Static, HideBySig
+    GetTableRowGuidColumn(String, SqlCeConnection): PrivateScope, Assembly, Static, HideBySig
+    GetTableColumns(String, SqlCeConnection): PrivateScope, Assembly, Static, HideBySig
+    BitConverterGetObject(SqlCeType, Byte[], Int32, Int32): PrivateScope, Assembly, Static, HideBySig
+    BitConverterGetBytes(SqlCeType, Object, Int32&): PrivateScope, Assembly, Static, HideBySig
+Class System.Data.SqlServerCe.ADP+DstComparer: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEqualityComparer`1[System.String]
+  Methods:
+    Equals(String, String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetHashCode(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.SqlCeInfoSchemaColumn: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String ParamName : Public
+    System.String ColumnName : Public
+    System.Data.SqlServerCe.SqlCeType SqlCeType : Public
+    Int32 MaxLength : Public
+    System.Object DefaultValue : Public
+    Byte Precision : Public
+    Byte Scale : Public
+    Int32 Ordinal : Public
+Class System.Data.SqlServerCe.KeyValuePairsEnumerator`2[TKey,TValue]: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Type parameter: TKey
+  Type parameter: TValue
+    Void .ctor(System.Collections.Generic.IEnumerator`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerator
+  Properties:
+    System.Object Current 'get ' : 
+  Methods:
+    Reset(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Current(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class System.Data.SqlServerCe.SqlCeTableColumns: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerable
+  Fields:
+    System.String TableName : Public
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    Add(SqlCeInfoSchemaColumn): PrivateScope, Public, HideBySig
+    Clear(String): PrivateScope, Public, HideBySig
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    GetValueByParameterName(String): PrivateScope, Public, HideBySig
+    GetValueByColumnName(String): PrivateScope, Public, HideBySig
+    ParameterNameOf(String): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.RowView: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.Data.SqlServerCe.RowView): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlServerCe.ResultSetView, Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlServerCe.ResultSetView, Int32, System.Data.SqlServerCe.SqlCeUpdatableRecord): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.IEditableObject
+    System.ComponentModel.IDataErrorInfo
+    System.IDisposable
+  Properties:
+    Boolean IsNew 'get set' : 
+    System.Data.SqlServerCe.ResultSetView Parent 'get set' : 
+    Int32 Bookmark 'get ' : 
+    System.Data.SqlServerCe.SqlCeUpdatableRecord UpdatableRecord 'get ' : 
+    System.String Error 'set' : 
+  Methods:
+    set_IsNew(Boolean): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IsNew(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Parent(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_Parent(ResultSetView): PrivateScope, Assembly, HideBySig, SpecialName
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    get_Bookmark(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_UpdatableRecord(): PrivateScope, Public, HideBySig, SpecialName
+    Refresh(): PrivateScope, Assembly, HideBySig
+    set_Error(String): PrivateScope, Assembly, HideBySig, SpecialName
+Struct System.Data.SqlServerCe.TrackingOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.TrackingOptions None = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.TrackingOptions Insert = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.TrackingOptions Update = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.TrackingOptions Delete = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.TrackingOptions All = 7 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.TrackingOptions Max = 8 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.TrackingKeyType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.TrackingKeyType None = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.TrackingKeyType PrimaryKey = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.TrackingKeyType Guid = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.TrackingKeyType Max = 3 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.PurgeType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.PurgeType None = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.PurgeType TimeBased = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.PurgeType CsnBased = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.PurgeType Max = 3 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.TrackingVersion: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.TrackingVersion Unknown = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.TrackingVersion TypeV1 = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.TrackingVersion TypeV2 = 2 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.SqlCeChangeTracking: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.Data.SqlServerCe.SqlCeTransaction): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlServerCe.SqlCeConnection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Int64 CurrentTxBsn 'get ' :  (Obsolete)
+    Int64 CurrentTxCsn 'get ' :  (Obsolete)
+  Methods:
+    DetectTrackingType(): PrivateScope, Assembly, HideBySig
+    VersionCheck(TrackingVersion&, TrackingVersion, TrackingVersion): PrivateScope, Assembly, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(Boolean): PrivateScope, Public, HideBySig
+    EnableTracking(String, SETRACKINGTYPE, SEOCSTRACKOPTIONS): PrivateScope, Assembly, HideBySig (Obsolete)
+    EnableTracking(String, TrackingKeyType, TrackingOptions): PrivateScope, Public, HideBySig
+    GetTrackingOptions(String, TrackingOptions&(Out)): PrivateScope, Public, HideBySig
+    DisableTracking(String): PrivateScope, Public, HideBySig
+    IsTableTracked(String): PrivateScope, Assembly, HideBySig (Obsolete)
+    GetTrackingType(String): PrivateScope, Assembly, HideBySig (Obsolete)
+    PurgeTombstoneTableData(String, PurgeType, Int64): PrivateScope, Public, HideBySig
+    PurgeTransactionSequenceData(PurgeType, Int64): PrivateScope, Public, HideBySig
+    GetLastCommittedCsn(): PrivateScope, Public, HideBySig
+    CleanupMetadata(String, Int32, Int64, Int64): PrivateScope, Assembly, HideBySig (Obsolete)
+    get_CurrentTxBsn(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_CurrentTxCsn(): PrivateScope, Assembly, HideBySig, SpecialName
+    GetPrecision(String, String): PrivateScope, Assembly, HideBySig
+    GetTrackingKeyType(String): PrivateScope, Assembly, HideBySig
+    TableExists(String): PrivateScope, Assembly, HideBySig
+    SystemCommandExecuteNonQuery(String): PrivateScope, Assembly, HideBySig
+    UpgradePublicTracking(String): PrivateScope, Public, Static, HideBySig
+    PackTombstoneKey(String, Object[]): PrivateScope, Public, HideBySig
+    UnpackTombstoneKey(String, Byte[]): PrivateScope, Public, HideBySig
+Struct System.Data.SqlServerCe.RepairOption: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.RepairOption DeleteCorruptedRows = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.RepairOption RecoverCorruptedRows = 1 : Public, Static, Literal, HasDefault (Obsolete)
+    System.Data.SqlServerCe.RepairOption RecoverAllPossibleRows = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.RepairOption RecoverAllOrFail = 2 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.VerifyOption: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.VerifyOption Default = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.VerifyOption Enhanced = 1 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.SqlCeEngine: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.String LocalConnectionString 'get set' : 
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_LocalConnectionString(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalConnectionString(String): PrivateScope, Public, HideBySig, SpecialName
+    Compact(String): PrivateScope, Public, HideBySig
+    Shrink(): PrivateScope, Public, HideBySig
+    Repair(String, RepairOption): PrivateScope, Public, HideBySig
+    Verify(): PrivateScope, Public, HideBySig
+    Verify(VerifyOption): PrivateScope, Public, HideBySig
+    CreateDatabase(): PrivateScope, Public, HideBySig
+    ProcessResults(IntPtr, Int32): PrivateScope, Assembly, Static, HideBySig
+    Upgrade(): PrivateScope, Public, HideBySig
+    Upgrade(String): PrivateScope, Public, HideBySig
+Class System.Data.SqlServerCe.SqlCeCommand: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Data.Common.DbCommand
+    Void .ctor(Boolean): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlServerCe.SqlCeConnection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlServerCe.SqlCeConnection, System.Data.SqlServerCe.SqlCeTransaction): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ICloneable
+  Fields:
+    UInt32[] indexColOrdinals : Assembly
+    System.Data.SqlServerCe.ResultSetOptions cursorCapabilities : Assembly
+    System.Data.CommandBehavior behavior : Assembly
+  Properties:
+    System.String CommandText 'get set' : 
+    System.String IndexName 'get set' : 
+    Int32 CommandTimeout 'get set' : 
+    System.Data.CommandType CommandType 'get set' : 
+    System.Data.SqlServerCe.SqlCeConnection Connection 'get set' : 
+    System.Data.SqlServerCe.SqlCeParameterCollection Parameters 'get ' : 
+    System.Data.SqlServerCe.SqlCeTransaction Transaction 'get set' : 
+    System.Data.SqlServerCe.SqlCeTransaction InternalTransaction 'get ' : 
+    System.Data.UpdateRowSource UpdatedRowSource 'get set' : 
+    IntPtr IQPSession 'get ' : 
+    IntPtr ITransact 'get ' : 
+    IntPtr IQPPlan 'get ' : 
+    Boolean DesignTimeVisible 'get set' : 
+  Methods:
+    get_CommandText(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_CommandText(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IndexName(): PrivateScope, Public, HideBySig, SpecialName
+    set_IndexName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_CommandTimeout(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_CommandTimeout(Int32): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CommandType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_CommandType(CommandType): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Connection(): PrivateScope, Public, HideBySig, SpecialName
+    set_Connection(SqlCeConnection): PrivateScope, Public, HideBySig, SpecialName
+    get_Parameters(): PrivateScope, Public, HideBySig, SpecialName
+    get_Transaction(): PrivateScope, Public, HideBySig, SpecialName
+    set_Transaction(SqlCeTransaction): PrivateScope, Public, HideBySig, SpecialName
+    get_InternalTransaction(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_UpdatedRowSource(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_UpdatedRowSource(UpdateRowSource): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IQPSession(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ITransact(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IQPPlan(): PrivateScope, Assembly, HideBySig, SpecialName
+    SetRange(DbRangeOptions, Object[], Object[]): PrivateScope, Public, HideBySig
+    Cancel(): PrivateScope, Public, Virtual, HideBySig
+    CloseFromConnection(): PrivateScope, Assembly, HideBySig
+    CreateParameter(): PrivateScope, Public, HideBySig
+    ExecuteReader(): PrivateScope, Public, HideBySig
+    ExecuteReader(CommandBehavior): PrivateScope, Public, HideBySig
+    ExecuteResultSet(ResultSetOptions): PrivateScope, Public, HideBySig
+    ExecuteResultSet(ResultSetOptions, SqlCeResultSet): PrivateScope, Public, HideBySig
+    HasOpenedCursors(): PrivateScope, Assembly, HideBySig
+    ClearCursorList(): PrivateScope, Assembly, HideBySig
+    ExecuteNonQuery(): PrivateScope, Public, Virtual, HideBySig
+    ExecuteScalar(): PrivateScope, Public, Virtual, HideBySig
+    OnDataBindingChange(): PrivateScope, Assembly, HideBySig
+    Prepare(): PrivateScope, Public, Virtual, HideBySig
+    ValidateTransaction(): PrivateScope, Assembly, HideBySig
+    ValidateCommand(String): PrivateScope, Assembly, HideBySig
+    get_DesignTimeVisible(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_DesignTimeVisible(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Struct System.Data.SqlServerCe.SqlCeCommand+ExecuteType: AutoLayout, AnsiClass, Class, NestedAssembly, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ExecuteType NonQuery = 0 : Public, Static, Literal, HasDefault
+    ExecuteType DataReader = 1 : Public, Static, Literal, HasDefault
+    ExecuteType ResultSet = 2 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.SqlCeCommandBuilder: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Data.Common.DbCommandBuilder
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlServerCe.SqlCeDataAdapter): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Data.ConflictOption ConflictOption 'get set' : 
+    System.Data.Common.CatalogLocation CatalogLocation 'get set' : 
+    System.String CatalogSeparator 'get set' : 
+    System.Data.SqlServerCe.SqlCeDataAdapter DataAdapter 'get set' : 
+    System.String QuotePrefix 'get set' : 
+    System.String QuoteSuffix 'get set' : 
+    System.String SchemaSeparator 'get set' : 
+  Methods:
+    get_ConflictOption(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ConflictOption(ConflictOption): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CatalogLocation(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_CatalogLocation(CatalogLocation): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CatalogSeparator(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_CatalogSeparator(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_DataAdapter(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataAdapter(SqlCeDataAdapter): PrivateScope, Public, HideBySig, SpecialName
+    get_QuotePrefix(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_QuotePrefix(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_QuoteSuffix(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_QuoteSuffix(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_SchemaSeparator(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_SchemaSeparator(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetInsertCommand(): PrivateScope, Public, HideBySig
+    GetUpdateCommand(): PrivateScope, Public, HideBySig
+    GetDeleteCommand(): PrivateScope, Public, HideBySig
+    QuoteIdentifier(String): PrivateScope, Public, Virtual, HideBySig
+    UnquoteIdentifier(String): PrivateScope, Public, Virtual, HideBySig
+Class System.Data.SqlServerCe.SqlCeConnection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Data.Common.DbConnection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String DatabaseIdentifier 'get ' : 
+    System.String ConnectionString 'get set' : 
+    Int32 ConnectionTimeout 'get ' : 
+    System.String Database 'get ' : 
+    System.String DataSource 'get ' : 
+    System.Data.SqlServerCe.SqlCeDelegatedTransaction DelegatedTransaction 'get set' : 
+    Boolean HasDelegatedTransaction 'get ' : 
+    System.Data.ConnectionState State 'get ' : 
+    System.String ServerVersion 'get ' : 
+    IntPtr ITransact 'get ' : 
+    IntPtr IQPSession 'get ' : 
+    IntPtr IQPServices 'get ' : 
+    Boolean IsEnlisted 'get ' : 
+    System.Data.SqlServerCe.SqlCeTransaction Transaction 'get ' : 
+  Events:
+    System.Data.SqlServerCe.SqlCeInfoMessageEventHandler InfoMessage: 
+    System.Data.SqlServerCe.SqlCeFlushFailureEventHandler FlushFailure: 
+    System.Data.StateChangeEventHandler StateChange:  (Obsolete)
+  Methods:
+    get_DatabaseIdentifier(): PrivateScope, Public, HideBySig, SpecialName
+    OnFlushFailure(Int32, IntPtr): PrivateScope, Assembly, HideBySig
+    get_ConnectionString(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ConnectionString(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ConnectionTimeout(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Database(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_DataSource(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_DelegatedTransaction(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_DelegatedTransaction(SqlCeDelegatedTransaction): PrivateScope, Assembly, HideBySig, SpecialName
+    get_HasDelegatedTransaction(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_State(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ServerVersion(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    add_InfoMessage(SqlCeInfoMessageEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_InfoMessage(SqlCeInfoMessageEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_FlushFailure(SqlCeFlushFailureEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FlushFailure(SqlCeFlushFailureEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_StateChange(StateChangeEventHandler): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    remove_StateChange(StateChangeEventHandler): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ITransact(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IQPSession(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IQPServices(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IsEnlisted(): PrivateScope, Assembly, HideBySig, SpecialName
+    EnlistTransaction(Transaction): PrivateScope, Public, Virtual, HideBySig
+    Enlist(Transaction): PrivateScope, Assembly, HideBySig
+    get_Transaction(): PrivateScope, Assembly, HideBySig, SpecialName
+    DisposeSqlCeDataRdr(SqlCeTransaction): PrivateScope, Assembly, HideBySig
+    Dispose(): PrivateScope, Public, HideBySig
+    Close(): PrivateScope, Public, Virtual, HideBySig
+    Zombie(SqlCeTransaction): PrivateScope, Assembly, HideBySig
+    GetDatabaseInfo(): PrivateScope, Public, HideBySig
+    BeginTransaction(IsolationLevel): PrivateScope, Public, HideBySig
+    BeginTransaction(): PrivateScope, Public, HideBySig
+    ChangeDatabase(String): PrivateScope, Public, Virtual, HideBySig
+    CheckStateOpen(String): PrivateScope, Assembly, HideBySig
+    AddWeakReference(Object): PrivateScope, Assembly, HideBySig
+    RemoveWeakReference(Object): PrivateScope, Assembly, HideBySig
+    HasOpenedCursors(SqlCeTransaction): PrivateScope, Assembly, HideBySig
+    CreateCommand(): PrivateScope, Public, HideBySig
+    Open(): PrivateScope, Public, Virtual, HideBySig
+    Open(Boolean): PrivateScope, Assembly, HideBySig
+    ProcessResults(Int32, IntPtr, Object): PrivateScope, Assembly, HideBySig
+Class System.Data.SqlServerCe.WeakReferenceCache: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(Boolean): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Assembly, HideBySig, SpecialName
+    Add(Object): PrivateScope, Assembly, HideBySig
+    GetObject(Int32): PrivateScope, Assembly, HideBySig
+    Remove(Object): PrivateScope, Assembly, HideBySig
+    RemoveAt(Int32): PrivateScope, Assembly, HideBySig
+Struct System.Data.SqlServerCe.CursorPosition: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.CursorPosition Undefined = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.CursorPosition AfterLast = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.CursorPosition BeforeFirst = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.CursorPosition OnRow = 3 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.SqlCeDataReader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Data.Common.DbDataReader
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlServerCe.SqlCeConnection, System.Data.SqlServerCe.SqlCeCommand): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32[] bindingIndex : Assembly
+    Int32[] accessorIndex : Assembly
+    Int32 recordsAffected : Assembly
+    System.Data.SqlServerCe.ResultSetOptions cursorCapabilities : Assembly
+    System.Data.SqlServerCe.CursorPosition cursorPosition : Assembly
+    Boolean isDisposed : Assembly
+    System.Data.SqlServerCe.FETCH fetchDirection : Assembly
+    Boolean isBaseTableCursor : Assembly
+    Boolean isOnRow : Assembly
+    System.Data.SqlServerCe.SqlCeConnection connection : Assembly
+    System.Data.SqlServerCe.SqlCeTransaction transaction : Assembly
+    System.Data.SqlServerCe.Accessor[] accessorArray : Assembly
+    IntPtr pSeCursor : Assembly
+    IntPtr pError : Assembly
+    System.Data.SqlServerCe.MetaData[] metadata : Assembly
+    System.Data.SqlServerCe.FieldNameLookup fieldNameLookup : Assembly
+  Properties:
+    Int32 Depth 'get ' : 
+    Int32 FieldCount 'get ' : 
+    Boolean IsClosed 'get ' : 
+    Int32 RecordsAffected 'get ' : 
+    System.Object Item [Int32] 'get ' : 
+    System.Object Item [System.String] 'get ' : 
+    Boolean HasRows 'get ' : 
+    Int32 HiddenFieldCount 'get ' : 
+  Methods:
+    get_Depth(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_FieldCount(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsClosed(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RecordsAffected(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Item(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_HasRows(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_HiddenFieldCount(): PrivateScope, Public, HideBySig, SpecialName
+    InitializeReader(SqlCeConnection, SqlCeCommand): PrivateScope, Assembly, HideBySig
+    Dispose(): PrivateScope, Public, HideBySig
+    Close(): PrivateScope, Public, Virtual, HideBySig
+    GetSchemaTable(): PrivateScope, Public, Virtual, HideBySig
+    Seek(DbSeekOptions, Object[]): PrivateScope, Public, HideBySig
+    SetRange(DbRangeOptions, Object[], Object[]): PrivateScope, Assembly, HideBySig
+    BuildSchemaTable(): PrivateScope, Assembly, HideBySig
+    FillMetaData(SqlCeCommand): PrivateScope, Assembly, HideBySig
+    ProcessResults(Int32): PrivateScope, Assembly, HideBySig
+    NextResult(): PrivateScope, Public, Virtual, HideBySig
+    Read(): PrivateScope, Public, Virtual, HideBySig
+    Move(DIRECTION): PrivateScope, Assembly, HideBySig
+    ReleaseCurrentRow(): PrivateScope, Assembly, HideBySig
+    CreateAccessors(SqlCeCommand, Int32, Boolean): PrivateScope, Assembly, HideBySig
+    GetBoolean(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetDecimal(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetByte(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetBytes(Int32, Int64, Byte[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetChars(Int32, Int64, Char[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetDataTypeName(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetDateTime(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetDouble(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetFieldType(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetProviderSpecificFieldType(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetFloat(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetGuid(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetInt16(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetInt32(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetInt64(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetName(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetOrdinal(String): PrivateScope, Public, Virtual, HideBySig
+    GetString(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetValue(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetValues(Object[]): PrivateScope, Public, Virtual, HideBySig
+    GetSqlBoolean(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlMoney(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlDecimal(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlByte(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlBinary(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlDateTime(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlDouble(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlSingle(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlGuid(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlInt16(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlInt32(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlInt64(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSqlString(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsDBNull(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+    GetChar(Int32): PrivateScope, Public, Virtual, HideBySig
+Class System.Data.SqlServerCe.SqlCeParameter: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Data.Common.DbParameter
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlDbType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlDbType, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlDbType, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlDbType, Int32, Boolean, Byte, Byte, System.String, System.Data.DataRowVersion, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlDbType, Int32, System.Data.ParameterDirection, Boolean, Byte, Byte, System.String, System.Data.DataRowVersion, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ICloneable
+  Properties:
+    System.Data.DbType DbType 'get set' : 
+    System.Data.ParameterDirection Direction 'get set' : 
+    Boolean IsNullable 'get set' : 
+    Int32 Offset 'get set' : 
+    Boolean SourceColumnNullMapping 'get set' : 
+    System.Data.SqlDbType SqlDbType 'get set' : 
+    System.Data.SqlServerCe.SqlCeType NativeType 'get set' : 
+    Boolean IsUserSpecifiedType 'get ' : 
+    System.String ParameterName 'get set' : 
+    System.String InternalParameterName 'get set' : 
+    System.Data.SqlServerCe.SqlCeParameterCollection Parent 'get set' : 
+    Byte Precision 'get set' : 
+    Byte Scale 'get set' : 
+    Int32 Size 'get set' : 
+    System.String SourceColumn 'get set' : 
+    System.Data.DataRowVersion SourceVersion 'get set' : 
+    System.Object Value 'get set' : 
+  Methods:
+    get_DbType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_DbType(DbType): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Direction(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Direction(ParameterDirection): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsNullable(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_IsNullable(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Offset(): PrivateScope, Public, HideBySig, SpecialName
+    set_Offset(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SourceColumnNullMapping(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_SourceColumnNullMapping(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_SqlDbType(): PrivateScope, Public, HideBySig, SpecialName
+    set_SqlDbType(SqlDbType): PrivateScope, Public, HideBySig, SpecialName
+    get_NativeType(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_NativeType(SqlCeType): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IsUserSpecifiedType(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ParameterName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ParameterName(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_InternalParameterName(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_InternalParameterName(String): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Parent(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_Parent(SqlCeParameterCollection): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Precision(): PrivateScope, Public, HideBySig, SpecialName
+    set_Precision(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_Scale(): PrivateScope, Public, HideBySig, SpecialName
+    set_Scale(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Size(Int32): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_SourceColumn(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_SourceColumn(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_SourceVersion(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_SourceVersion(DataRowVersion): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Value(Object): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ResetDbType(): PrivateScope, Public, Virtual, HideBySig
+    GetParameterLength(): PrivateScope, Assembly, HideBySig
+    GetParameterValue(): PrivateScope, Assembly, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Data.SqlServerCe.SqlCeParameterCollection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Data.Common.DbParameterCollection
+    Void .ctor(System.Data.SqlServerCe.SqlCeCommand): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsSynchronized 'get ' : 
+    System.Object SyncRoot 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    Boolean IsFixedSize 'get ' : 
+    Int32 Count 'get ' : 
+    System.Data.SqlServerCe.SqlCeParameter Item [Int32] 'get set' : 
+    System.Data.SqlServerCe.SqlCeParameter Item [System.String] 'get set' : 
+  Methods:
+    get_IsSynchronized(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_SyncRoot(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsFixedSize(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, SqlCeParameter): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(String): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(String, SqlCeParameter): PrivateScope, Public, HideBySig, SpecialName
+    OnParameterNameChange(SqlCeParameter, String): PrivateScope, Assembly, HideBySig
+    AddWithoutEvents(Int32, SqlCeParameter): PrivateScope, Assembly, HideBySig
+    AddRange(Array): PrivateScope, Public, Virtual, HideBySig
+    Add(Object): PrivateScope, Public, Virtual, HideBySig
+    Add(SqlCeParameter): PrivateScope, Public, HideBySig
+    AddWithValue(String, Object): PrivateScope, Public, HideBySig
+    Add(String, Object): PrivateScope, Public, HideBySig
+    Add(String, SqlDbType): PrivateScope, Public, HideBySig
+    Add(String, SqlDbType, Int32): PrivateScope, Public, HideBySig
+    Add(String, SqlDbType, Int32, String): PrivateScope, Public, HideBySig
+    Contains(String): PrivateScope, Public, Virtual, HideBySig
+    Contains(Object): PrivateScope, Public, Virtual, HideBySig
+    Clear(): PrivateScope, Public, Virtual, HideBySig
+    ClearWithoutEvents(): PrivateScope, Assembly, HideBySig
+    CopyTo(Array, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+    IndexOf(String): PrivateScope, Public, Virtual, HideBySig
+    IndexOf(Object): PrivateScope, Public, Virtual, HideBySig
+    Insert(Int32, Object): PrivateScope, Public, Virtual, HideBySig
+    OnDataBindingChange(): PrivateScope, Assembly, HideBySig
+    RemoveAt(Int32): PrivateScope, Public, Virtual, HideBySig
+    RemoveAt(String): PrivateScope, Public, Virtual, HideBySig
+    Remove(Object): PrivateScope, Public, Virtual, HideBySig
+Struct System.Data.SqlServerCe.CommitMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.CommitMode Deferred = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.CommitMode Immediate = 1 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.SqlCeTransaction: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Data.Common.DbTransaction
+    Void .ctor(System.Data.SqlServerCe.SqlCeConnection, System.Data.IsolationLevel, IntPtr, IntPtr): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Data.SqlServerCe.SqlCeConnection connection : Assembly
+  Properties:
+    System.Data.SqlServerCe.SeTransactionFlags EngineFlags 'get set' : 
+    System.Data.IsolationLevel IsolationLevel 'get ' : 
+    System.Guid TrackingContext 'get set' : 
+    Int64 CurrentTransactionBsn 'get ' : 
+    Boolean IsZombied 'get ' : 
+    IntPtr ITransact 'get ' : 
+    IntPtr IQPSession 'get ' : 
+  Methods:
+    get_EngineFlags(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_EngineFlags(SeTransactionFlags): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IsolationLevel(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TrackingContext(): PrivateScope, Public, HideBySig, SpecialName
+    set_TrackingContext(Guid): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentTransactionBsn(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsZombied(): PrivateScope, Assembly, HideBySig, SpecialName
+    SetTrackingObject(SqlCeChangeTracking): PrivateScope, Assembly, HideBySig
+    Dispose(): PrivateScope, Public, HideBySig
+    get_ITransact(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IQPSession(): PrivateScope, Assembly, HideBySig, SpecialName
+    Commit(): PrivateScope, Public, Virtual, HideBySig
+    Commit(CommitMode): PrivateScope, Public, HideBySig
+    Rollback(): PrivateScope, Public, Virtual, HideBySig
+Class System.Data.SqlServerCe.SqlCeType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Fields:
+    System.Data.SqlServerCe.SETYPE seType : Assembly, InitOnly
+    System.String dataType : Assembly, InitOnly
+    System.Type clrType : Assembly, InitOnly
+    System.Data.DbType dbType : Assembly, InitOnly
+    System.Data.SqlDbType sqlDbType : Assembly, InitOnly
+    Boolean isFixed : Assembly, InitOnly
+    Boolean isBLOB : Assembly, InitOnly
+    Byte maxpre : Assembly, InitOnly
+    Byte scale : Assembly, InitOnly
+    Int32 fixlen : Assembly, InitOnly
+    System.Data.SqlServerCe.SqlCeType _SByte : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _SmallInt : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _Int : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _BigInt : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _TinyInt : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _UInt16 : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _UInt32 : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _UInt64 : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _Real : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _Float : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _Money : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _Numeric : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _Bit : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _UniqueIdentifier : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _Binary : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _RowVersion : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _Image : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _VarBinary : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _NText : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _NChar : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _NVarChar : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType _DateTime : Assembly, Static, InitOnly
+    System.Data.SqlServerCe.SqlCeType Default : Assembly, Static, InitOnly
+    DataTypeAlias[] _aliasTypes : Assembly, Static
+    System.Data.SqlServerCe.SqlCeType[] _AllTypes : Assembly, Static, InitOnly
+    Int32 MAX_BINARY_COLUMN_SIZE : Assembly, Static, InitOnly
+    Int32 MAX_IMAGE_COLUMN_SIZE : Assembly, Static, InitOnly
+    Int32 MAX_NCHAR_COLUMN_SIZE : Assembly, Static, InitOnly
+    Int32 MAX_NTEXT_COLUMN_SIZE : Assembly, Static, InitOnly
+    Int32[] SqlDbTypeConversionMatrix : Assembly, Static
+  Properties:
+    System.Data.SqlDbType SqlDbType 'get ' : 
+    System.Data.SqlServerCe.SETYPE SeType 'get ' : 
+    System.String DataType 'get ' : 
+    System.Type ClrType 'get ' : 
+    System.Data.DbType DbType 'get ' : 
+    Boolean IsLongValue 'get ' : 
+    Boolean IsFixed 'get ' : 
+  Methods:
+    get_SqlDbType(): PrivateScope, Public, HideBySig, SpecialName
+    get_SeType(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_DataType(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ClrType(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_DbType(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IsLongValue(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IsFixed(): PrivateScope, Assembly, HideBySig, SpecialName
+    FromSeType(SETYPE): PrivateScope, Assembly, Static, HideBySig
+    FromDbType(DbType): PrivateScope, Assembly, Static, HideBySig
+    FromSqlDbType(SqlDbType): PrivateScope, Assembly, Static, HideBySig
+    FromDataType(String): PrivateScope, Assembly, Static, HideBySig
+    SqlDbType2SqlType(SqlDbType): PrivateScope, Assembly, Static, HideBySig
+    FromClrType(Object): PrivateScope, Assembly, Static, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    ValidateDataConversion(SqlDbType, SqlDbType): PrivateScope, Assembly, Static, HideBySig
+Struct System.Data.SqlServerCe.SqlCeType+DataTypeAlias: AutoLayout, AnsiClass, Class, NestedAssembly, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    System.String dataType : Public
+    System.Data.SqlServerCe.SqlCeType sqlCeType : Public
+Class System.Data.SqlServerCe.SqlCeUpdatableRecord: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Data.SqlServerCe.MetaData[], System.Object[], Boolean, Int32, System.Data.SqlServerCe.FieldNameLookup): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Data.IDataRecord
+  Fields:
+    System.Object[] values : Assembly
+  Properties:
+    Int32 FieldCount 'get ' : 
+    Int32 HiddenFieldCount 'get ' : 
+    Boolean Updatable 'get ' : 
+    System.Data.SqlServerCe.ColumnUpdatedStatus[] ColumnsUpdatedStatus 'get ' : 
+    System.Object Item [Int32] 'get set' : 
+    System.Object Item [System.String] 'get set' : 
+  Methods:
+    get_FieldCount(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HiddenFieldCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_Updatable(): PrivateScope, Public, HideBySig, SpecialName
+    get_ColumnsUpdatedStatus(): PrivateScope, Assembly, HideBySig, SpecialName
+    SetDefault(Int32): PrivateScope, Public, HideBySig
+    GetValues(Object[]): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SetValues(Object[]): PrivateScope, Public, HideBySig
+    GetName(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetValue(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDataTypeName(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetFieldType(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetData(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetOrdinal(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IsSetAsDefault(Int32): PrivateScope, Public, HideBySig
+    get_Item(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(Int32, Object): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(String, Object): PrivateScope, Public, HideBySig, SpecialName
+    IsDBNull(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetBoolean(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetByte(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetBytes(Int32, Int64, Byte[], Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetChars(Int32, Int64, Char[], Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetChar(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetGuid(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetInt16(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetInt32(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetInt64(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetFloat(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDouble(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetString(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDecimal(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDateTime(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetSqlMetaData(Int32): PrivateScope, Public, HideBySig
+    GetSqlBoolean(Int32): PrivateScope, Public, HideBySig
+    GetSqlBinary(Int32): PrivateScope, Public, HideBySig
+    GetSqlByte(Int32): PrivateScope, Public, HideBySig
+    GetSqlInt16(Int32): PrivateScope, Public, HideBySig
+    GetSqlInt32(Int32): PrivateScope, Public, HideBySig
+    GetSqlInt64(Int32): PrivateScope, Public, HideBySig
+    GetSqlSingle(Int32): PrivateScope, Public, HideBySig
+    GetSqlDouble(Int32): PrivateScope, Public, HideBySig
+    GetSqlString(Int32): PrivateScope, Public, HideBySig
+    GetSqlMoney(Int32): PrivateScope, Public, HideBySig
+    GetSqlDecimal(Int32): PrivateScope, Public, HideBySig
+    GetSqlDateTime(Int32): PrivateScope, Public, HideBySig
+    GetSqlGuid(Int32): PrivateScope, Public, HideBySig
+    GetSqlCharsRef(Int32): PrivateScope, Public, HideBySig
+    GetSqlBytesRef(Int32): PrivateScope, Public, HideBySig
+    SetObjectRef(Int32, Object): PrivateScope, Public, HideBySig
+    SetValue(Int32, Object): PrivateScope, Public, HideBySig
+    SetBoolean(Int32, Boolean): PrivateScope, Public, HideBySig
+    SetByte(Int32, Byte): PrivateScope, Public, HideBySig
+    SetBytes(Int32, Int64, Byte[], Int32, Int32): PrivateScope, Public, HideBySig
+    SetChar(Int32, Char): PrivateScope, Public, HideBySig
+    SetChars(Int32, Int64, Char[], Int32, Int32): PrivateScope, Public, HideBySig
+    SetGuid(Int32, Guid): PrivateScope, Public, HideBySig
+    SetInt16(Int32, Int16): PrivateScope, Public, HideBySig
+    SetInt32(Int32, Int32): PrivateScope, Public, HideBySig
+    SetInt64(Int32, Int64): PrivateScope, Public, HideBySig
+    SetFloat(Int32, Single): PrivateScope, Public, HideBySig
+    SetDouble(Int32, Double): PrivateScope, Public, HideBySig
+    SetString(Int32, String): PrivateScope, Public, HideBySig
+    SetDecimal(Int32, Decimal): PrivateScope, Public, HideBySig
+    SetDateTime(Int32, DateTime): PrivateScope, Public, HideBySig
+    SetSqlBoolean(Int32, SqlBoolean): PrivateScope, Public, HideBySig
+    SetSqlBinary(Int32, SqlBinary): PrivateScope, Public, HideBySig
+    SetSqlByte(Int32, SqlByte): PrivateScope, Public, HideBySig
+    SetSqlInt16(Int32, SqlInt16): PrivateScope, Public, HideBySig
+    SetSqlInt32(Int32, SqlInt32): PrivateScope, Public, HideBySig
+    SetSqlInt64(Int32, SqlInt64): PrivateScope, Public, HideBySig
+    SetSqlSingle(Int32, SqlSingle): PrivateScope, Public, HideBySig
+    SetSqlDouble(Int32, SqlDouble): PrivateScope, Public, HideBySig
+    SetSqlString(Int32, SqlString): PrivateScope, Public, HideBySig
+    SetSqlMoney(Int32, SqlMoney): PrivateScope, Public, HideBySig
+    SetSqlDecimal(Int32, SqlDecimal): PrivateScope, Public, HideBySig
+    SetSqlDateTime(Int32, SqlDateTime): PrivateScope, Public, HideBySig
+    SetSqlGuid(Int32, SqlGuid): PrivateScope, Public, HideBySig
+Class System.Data.SqlServerCe.SqlCeResultSet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Data.SqlServerCe.SqlCeDataReader
+    Void .ctor(System.Data.SqlServerCe.SqlCeConnection, System.Data.SqlServerCe.SqlCeCommand): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.IListSource
+  Properties:
+    System.Object Item [Int32] 'get ' : 
+    System.Object Item [System.String] 'get ' : 
+    Boolean Updatable 'get ' : 
+    Boolean Scrollable 'get ' : 
+    System.Data.SqlServerCe.ResultSetSensitivity Sensitivity 'get ' : 
+    System.Collections.ArrayList BookmarkArray 'get ' : 
+    System.Data.SqlServerCe.ResultSetView ResultSetView 'get ' : 
+  Events:
+    System.Data.SqlServerCe.ResultSetChangedEventHandler ResultSetChanged: 
+  Methods:
+    SetSqlString(Int32, SqlString): PrivateScope, Public, HideBySig
+    SetSqlMoney(Int32, SqlMoney): PrivateScope, Public, HideBySig
+    SetSqlDecimal(Int32, SqlDecimal): PrivateScope, Public, HideBySig
+    SetSqlDateTime(Int32, SqlDateTime): PrivateScope, Public, HideBySig
+    SetSqlGuid(Int32, SqlGuid): PrivateScope, Public, HideBySig
+    add_ResultSetChanged(ResultSetChangedEventHandler): PrivateScope, Assembly, HideBySig, SpecialName
+    remove_ResultSetChanged(ResultSetChangedEventHandler): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Item(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Updatable(): PrivateScope, Public, HideBySig, SpecialName
+    get_Scrollable(): PrivateScope, Public, HideBySig, SpecialName
+    get_Sensitivity(): PrivateScope, Public, HideBySig, SpecialName
+    get_BookmarkArray(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ResultSetView(): PrivateScope, Public, HideBySig, SpecialName
+    GotoRow(Int32): PrivateScope, Assembly, HideBySig
+    InternalUpdate(Object): PrivateScope, Assembly, HideBySig
+    RemoveBookmarkFromCache(Int32): PrivateScope, Assembly, HideBySig
+    InternalInsert(Boolean, Object, SqlCeUpdatableRecord): PrivateScope, Assembly, HideBySig
+    GetCurrentRecord(): PrivateScope, Assembly, HideBySig
+    CreateRecord(): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, HideBySig
+    Delete(): PrivateScope, Public, HideBySig
+    Insert(SqlCeUpdatableRecord): PrivateScope, Public, HideBySig
+    Insert(SqlCeUpdatableRecord, DbInsertOptions): PrivateScope, Public, HideBySig
+    ReadFirst(): PrivateScope, Public, HideBySig
+    ReadLast(): PrivateScope, Public, HideBySig
+    ReadPrevious(): PrivateScope, Public, HideBySig
+    ReadAbsolute(Int32): PrivateScope, Public, HideBySig
+    ReadRelative(Int32): PrivateScope, Public, HideBySig
+    SetDefault(Int32): PrivateScope, Public, HideBySig
+    IsSetAsDefault(Int32): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+    GetSqlMetaData(Int32): PrivateScope, Public, HideBySig
+    IsDBNull(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetBoolean(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetDecimal(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetByte(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetBytes(Int32, Int64, Byte[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetChars(Int32, Int64, Char[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetDateTime(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetDouble(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetFloat(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetGuid(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetInt16(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetInt32(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetInt64(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetString(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetValue(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetValues(Object[]): PrivateScope, Public, Virtual, HideBySig
+    SetObjectRef(Int32, Object): PrivateScope, Public, HideBySig
+    SetValues(Object[]): PrivateScope, Public, HideBySig
+    SetValue(Int32, Object): PrivateScope, Public, HideBySig
+    SetBoolean(Int32, Boolean): PrivateScope, Public, HideBySig
+    SetByte(Int32, Byte): PrivateScope, Public, HideBySig
+    SetBytes(Int32, Int64, Byte[], Int32, Int32): PrivateScope, Public, HideBySig
+    SetChar(Int32, Char): PrivateScope, Public, HideBySig
+    SetChars(Int32, Int64, Char[], Int32, Int32): PrivateScope, Public, HideBySig
+    SetDouble(Int32, Double): PrivateScope, Public, HideBySig
+    SetDecimal(Int32, Decimal): PrivateScope, Public, HideBySig
+    SetDateTime(Int32, DateTime): PrivateScope, Public, HideBySig
+    SetGuid(Int32, Guid): PrivateScope, Public, HideBySig
+    SetInt16(Int32, Int16): PrivateScope, Public, HideBySig
+    SetInt32(Int32, Int32): PrivateScope, Public, HideBySig
+    SetInt64(Int32, Int64): PrivateScope, Public, HideBySig
+    SetFloat(Int32, Single): PrivateScope, Public, HideBySig
+    SetString(Int32, String): PrivateScope, Public, HideBySig
+    GetSqlBoolean(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlMoney(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlDecimal(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlByte(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlBinary(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlDateTime(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlDouble(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlSingle(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlGuid(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlInt16(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlInt32(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlInt64(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetSqlString(Int32): PrivateScope, Public, Virtual, HideBySig
+    SetSqlBoolean(Int32, SqlBoolean): PrivateScope, Public, HideBySig
+    SetSqlBinary(Int32, SqlBinary): PrivateScope, Public, HideBySig
+    SetSqlByte(Int32, SqlByte): PrivateScope, Public, HideBySig
+    SetSqlInt16(Int32, SqlInt16): PrivateScope, Public, HideBySig
+    SetSqlInt32(Int32, SqlInt32): PrivateScope, Public, HideBySig
+    SetSqlInt64(Int32, SqlInt64): PrivateScope, Public, HideBySig
+    SetSqlSingle(Int32, SqlSingle): PrivateScope, Public, HideBySig
+    SetSqlDouble(Int32, SqlDouble): PrivateScope, Public, HideBySig
+Struct System.Data.SqlServerCe.ColumnUpdatedStatus: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.ColumnUpdatedStatus None = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ColumnUpdatedStatus NewValue = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ColumnUpdatedStatus ServerDefault = 2 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.ChangeType: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.ChangeType RowInserted = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ChangeType RowDeleted = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ChangeType RowUpdated = 2 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.ResultSetChangedEventArgs: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.Data.SqlServerCe.ChangeType, System.Data.SqlServerCe.RowView): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Data.SqlServerCe.RowView RowView 'get ' : 
+    System.Data.SqlServerCe.ChangeType ChangeType 'get ' : 
+  Methods:
+    get_RowView(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ChangeType(): PrivateScope, Assembly, HideBySig, SpecialName
+Class System.Data.SqlServerCe.ResultSetChangedEventHandler: AutoLayout, AnsiClass, Class, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ResultSetChangedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ResultSetChangedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct System.Data.SqlServerCe.RdaTrackOption: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.RdaTrackOption TrackingOff = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.RdaTrackOption TrackingOn = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.RdaTrackOption TrackingOnWithIndexes = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.RdaTrackOption TrackingOffWithIndexes = 3 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.RdaBatchOption: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.RdaBatchOption BatchingOff = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.RdaBatchOption BatchingOn = 1 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.SqlCeRemoteDataAccess: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.String LocalConnectionString 'get set' : 
+    System.String InternetUrl 'get set' : 
+    System.String InternetLogin 'get set' : 
+    System.String InternetPassword 'get set' : 
+    Boolean ConnectionManager 'get set' : 
+    System.String InternetProxyServer 'get set' : 
+    System.String InternetProxyLogin 'get set' : 
+    System.String InternetProxyPassword 'get set' : 
+    Int32 ConnectTimeout 'get set' : 
+    Int32 SendTimeout 'get set' : 
+    Int32 ReceiveTimeout 'get set' : 
+    Int16 ConnectionRetryTimeout 'get set' : 
+    Int16 CompressionLevel 'get set' : 
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_LocalConnectionString(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocalConnectionString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetUrl(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetUrl(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetLogin(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetLogin(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetPassword(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetPassword(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectionManager(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectionManager(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetProxyServer(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetProxyServer(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetProxyLogin(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetProxyLogin(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetProxyPassword(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetProxyPassword(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SendTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_SendTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ReceiveTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReceiveTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectionRetryTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectionRetryTimeout(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_CompressionLevel(): PrivateScope, Public, HideBySig, SpecialName
+    set_CompressionLevel(Int16): PrivateScope, Public, HideBySig, SpecialName
+    Pull(String, String, String): PrivateScope, Public, HideBySig
+    Pull(String, String, String, RdaTrackOption): PrivateScope, Public, HideBySig
+    Pull(String, String, String, RdaTrackOption, String): PrivateScope, Public, HideBySig
+    Push(String, String): PrivateScope, Public, HideBySig
+    Push(String, String, RdaBatchOption): PrivateScope, Public, HideBySig
+    SubmitSql(String, String): PrivateScope, Public, HideBySig
+Struct System.Data.SqlServerCe.AddOption: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.AddOption ExistingDatabase = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.AddOption CreateDatabase = 1 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.DropOption: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.DropOption LeaveDatabase = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DropOption DropDatabase = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DropOption UnregisterSubscription = 2 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.NetworkType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.NetworkType DefaultNetwork = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.NetworkType TcpIpSockets = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.NetworkType MultiProtocol = 2 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SecurityType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SecurityType DBAuthentication = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SecurityType NTAuthentication = 1 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.ExchangeType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.ExchangeType None = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ExchangeType Upload = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ExchangeType BiDirectional = 3 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.ValidateType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.ValidateType NoValidation = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ValidateType RowCountOnly = 1 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SnapshotTransferType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SnapshotTransferType UNC = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SnapshotTransferType FTP = 1 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SyncStatus: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SyncStatus Start = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SyncStatus Uploading = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SyncStatus Synchronizing = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SyncStatus Connecting = 3 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SyncStatus Downloading = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SyncStatus End = 5 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.OnStartTableUpload: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(IAsyncResult, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(IAsyncResult, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.OnStartTableDownload: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(IAsyncResult, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(IAsyncResult, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.OnSynchronization: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(IAsyncResult, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(IAsyncResult, Int32, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.SyncAsyncResult: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Data.SqlServerCe.SqlCeReplication, System.AsyncCallback, System.Object): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlServerCe.SqlCeReplication, System.AsyncCallback, System.Data.SqlServerCe.OnStartTableUpload, System.Data.SqlServerCe.OnStartTableDownload, System.Data.SqlServerCe.OnSynchronization, System.Object): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IAsyncResult
+  Methods:
+    SyncThread(): PrivateScope, Assembly, HideBySig
+    GetException(): PrivateScope, Public, HideBySig
+Class System.Data.SqlServerCe.SqlCeReplication: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    IntPtr pIReplication : Assembly
+    IntPtr pIErrors : Assembly
+  Properties:
+    Int16 PostSyncCleanup 'get set' : 
+    System.String Distributor 'get set' : 
+    System.Data.SqlServerCe.NetworkType DistributorNetwork 'get set' : 
+    System.String DistributorAddress 'get set' : 
+    System.Data.SqlServerCe.SecurityType DistributorSecurityMode 'get set' : 
+    System.String DistributorLogin 'get set' : 
+    System.String DistributorPassword 'get set' : 
+    System.Data.SqlServerCe.ExchangeType ExchangeType 'get set' : 
+    System.String HostName 'get set' : 
+    System.String InternetUrl 'get set' : 
+    System.String InternetLogin 'get set' : 
+    System.String InternetPassword 'get set' : 
+    System.String InternetProxyServer 'get set' : 
+    System.String InternetProxyLogin 'get set' : 
+    System.String InternetProxyPassword 'get set' : 
+    Int16 LoginTimeout 'get set' : 
+    System.String ProfileName 'get set' : 
+    System.String Publisher 'get set' : 
+    System.Data.SqlServerCe.NetworkType PublisherNetwork 'get set' : 
+    System.String PublisherAddress 'get set' : 
+    System.Data.SqlServerCe.SecurityType PublisherSecurityMode 'get set' : 
+    System.String PublisherLogin 'get set' : 
+    System.String PublisherPassword 'get set' : 
+    System.String PublisherDatabase 'get set' : 
+    System.String Publication 'get set' : 
+    Int32 PublisherChanges 'get ' : 
+    Int32 PublisherConflicts 'get ' : 
+    Int16 QueryTimeout 'get set' : 
+    System.String Subscriber 'get set' : 
+    System.String SubscriberConnectionString 'get set' : 
+    Int32 SubscriberChanges 'get ' : 
+    Int32 SubscriberConflicts 'get ' : 
+    System.Data.SqlServerCe.ValidateType Validate 'get set' : 
+    Int32 ConnectTimeout 'get set' : 
+    Int32 SendTimeout 'get set' : 
+    Int32 ReceiveTimeout 'get set' : 
+    Int16 ConnectionRetryTimeout 'get set' : 
+    Int16 CompressionLevel 'get set' : 
+    Boolean ConnectionManager 'get set' : 
+    System.Data.SqlServerCe.SnapshotTransferType SnapshotTransferType 'get set' : 
+  Methods:
+    get_ConnectionManager(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectionManager(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SnapshotTransferType(): PrivateScope, Public, HideBySig, SpecialName
+    set_SnapshotTransferType(SnapshotTransferType): PrivateScope, Public, HideBySig, SpecialName
+    AddSubscription(AddOption): PrivateScope, Public, HideBySig
+    DropSubscription(DropOption): PrivateScope, Public, HideBySig
+    ReinitializeSubscription(Boolean): PrivateScope, Public, HideBySig
+    Synchronize(): PrivateScope, Public, HideBySig
+    BeginSynchronize(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    BeginSynchronize(AsyncCallback, OnStartTableUpload, OnStartTableDownload, OnSynchronization, Object): PrivateScope, Public, HideBySig
+    EndSynchronize(IAsyncResult): PrivateScope, Public, HideBySig
+    CancelSynchronize(): PrivateScope, Public, HideBySig
+    LoadProperties(): PrivateScope, Public, HideBySig
+    SaveProperties(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_PostSyncCleanup(): PrivateScope, Public, HideBySig, SpecialName
+    set_PostSyncCleanup(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_Distributor(): PrivateScope, Public, HideBySig, SpecialName
+    set_Distributor(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DistributorNetwork(): PrivateScope, Public, HideBySig, SpecialName
+    set_DistributorNetwork(NetworkType): PrivateScope, Public, HideBySig, SpecialName
+    get_DistributorAddress(): PrivateScope, Public, HideBySig, SpecialName
+    set_DistributorAddress(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DistributorSecurityMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_DistributorSecurityMode(SecurityType): PrivateScope, Public, HideBySig, SpecialName
+    get_DistributorLogin(): PrivateScope, Public, HideBySig, SpecialName
+    set_DistributorLogin(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DistributorPassword(): PrivateScope, Public, HideBySig, SpecialName
+    set_DistributorPassword(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ExchangeType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExchangeType(ExchangeType): PrivateScope, Public, HideBySig, SpecialName
+    get_HostName(): PrivateScope, Public, HideBySig, SpecialName
+    set_HostName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetUrl(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetUrl(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetLogin(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetLogin(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetPassword(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetPassword(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetProxyServer(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetProxyServer(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetProxyLogin(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetProxyLogin(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InternetProxyPassword(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternetProxyPassword(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LoginTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_LoginTimeout(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_ProfileName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ProfileName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Publisher(): PrivateScope, Public, HideBySig, SpecialName
+    set_Publisher(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PublisherNetwork(): PrivateScope, Public, HideBySig, SpecialName
+    set_PublisherNetwork(NetworkType): PrivateScope, Public, HideBySig, SpecialName
+    get_PublisherAddress(): PrivateScope, Public, HideBySig, SpecialName
+    set_PublisherAddress(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PublisherSecurityMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_PublisherSecurityMode(SecurityType): PrivateScope, Public, HideBySig, SpecialName
+    get_PublisherLogin(): PrivateScope, Public, HideBySig, SpecialName
+    set_PublisherLogin(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PublisherPassword(): PrivateScope, Public, HideBySig, SpecialName
+    set_PublisherPassword(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PublisherDatabase(): PrivateScope, Public, HideBySig, SpecialName
+    set_PublisherDatabase(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Publication(): PrivateScope, Public, HideBySig, SpecialName
+    set_Publication(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PublisherChanges(): PrivateScope, Public, HideBySig, SpecialName
+    get_PublisherConflicts(): PrivateScope, Public, HideBySig, SpecialName
+    get_QueryTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_QueryTimeout(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_Subscriber(): PrivateScope, Public, HideBySig, SpecialName
+    set_Subscriber(String): PrivateScope, Public, HideBySig, SpecialName
+    get_SubscriberConnectionString(): PrivateScope, Public, HideBySig, SpecialName
+    set_SubscriberConnectionString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_SubscriberChanges(): PrivateScope, Public, HideBySig, SpecialName
+    get_SubscriberConflicts(): PrivateScope, Public, HideBySig, SpecialName
+    get_Validate(): PrivateScope, Public, HideBySig, SpecialName
+    set_Validate(ValidateType): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SendTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_SendTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ReceiveTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReceiveTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectionRetryTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectionRetryTimeout(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_CompressionLevel(): PrivateScope, Public, HideBySig, SpecialName
+    set_CompressionLevel(Int16): PrivateScope, Public, HideBySig, SpecialName
+Class System.Data.SqlServerCe.SqlCeError: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(Int32, System.String, Int32, System.String, Int32, Int32, Int32, System.String, System.String, System.String): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Text.RegularExpressions.Regex ParamInfoRegex : Assembly, Static
+  Properties:
+    Int32 HResult 'get ' : 
+    System.String Message 'get ' : 
+    Int32 NativeError 'get ' : 
+    System.String Source 'get ' : 
+    Int32[] NumericErrorParameters 'get ' : 
+    System.String[] ErrorParameters 'get ' : 
+  Methods:
+    get_HResult(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+    get_NativeError(): PrivateScope, Public, HideBySig, SpecialName
+    get_Source(): PrivateScope, Public, HideBySig, SpecialName
+    get_NumericErrorParameters(): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorParameters(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetDefaultError(Int32): PrivateScope, Assembly, Static, HideBySig
+Struct System.Data.SqlServerCe.DbRangeOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.DbRangeOptions InclusiveStart = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbRangeOptions InclusiveEnd = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbRangeOptions ExclusiveStart = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbRangeOptions ExclusiveEnd = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbRangeOptions ExcludeNulls = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbRangeOptions Prefix = 8 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbRangeOptions Match = 16 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbRangeOptions Default = 0 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.DbSeekOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.DbSeekOptions FirstEqual = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbSeekOptions LastEqual = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbSeekOptions AfterEqual = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbSeekOptions After = 8 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbSeekOptions BeforeEqual = 16 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbSeekOptions Before = 32 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.DbInsertOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.DbInsertOptions KeepCurrentPosition = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbInsertOptions PositionOnInsertedRow = 2 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.DbColumnFlags: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.DbColumnFlags ISBOOKMARK = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbColumnFlags MAYDEFER = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbColumnFlags WRITE = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbColumnFlags WRITEUNKNOWN = 8 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbColumnFlags ISFIXEDLENGTH = 16 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbColumnFlags ISNULLABLE = 32 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbColumnFlags MAYBENULL = 64 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbColumnFlags ISLONG = 128 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbColumnFlags ISROWID = 256 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbColumnFlags ISROWVER = 512 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DbColumnFlags CACHEDEFERRED = 4096 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SORTFLAGS: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SORTFLAGS NORM_IGNORECASE = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SORTFLAGS NORM_IGNOREKANATYPE = 65536 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SORTFLAGS NORM_IGNOREWIDTH = 131072 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SeTransactionFlags: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SeTransactionFlags NOFLAGS = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SeTransactionFlags SYSTEM = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SeTransactionFlags GENERATEIDENTITY = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SeTransactionFlags GENERATEROWGUID = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SeTransactionFlags TRACK = 8 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SeTransactionFlags REPLACECOLUMN = 16 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SeTransactionFlags DISABLETRIGGERS = 32 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SeTransactionFlags COMPRESSEDLVSTREAM = 64 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SeTransactionFlags VALIDFLAGS = 127 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.DBStatus: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.DBStatus S_OK = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_BADACCESSOR = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_CANTCONVERTVALUE = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus S_ISNULL = 3 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus S_TRUNCATED = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_SIGNMISMATCH = 5 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_DATAOVERFLOW = 6 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_CANTCREATE = 7 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_UNAVAILABLE = 8 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_PERMISSIONDENIED = 9 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_INTEGRITYVIOLATION = 10 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_SCHEMAVIOLATION = 11 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_BADSTATUS = 12 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus S_DEFAULT = 13 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus S_CELLEMPTY = 14 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus S_IGNORE = 15 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_DOESNOTEXIST = 16 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_INVALIDURL = 17 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_RESOURCELOCKED = 18 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_RESOURCEEXISTS = 19 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_CANNOTCOMPLETE = 20 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_VOLUMENOTFOUND = 21 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_OUTOFSPACE = 22 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus S_CANNOTDELETESOURCE = 23 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_READONLY = 24 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_RESOURCEOUTOFSCOPE = 25 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus S_ALREADYEXISTS = 26 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_CANCELED = 27 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus E_NOTCOLLECTION = 28 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DBStatus S_ROWSETCOLUMN = 29 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.ENCRYPTIONMODE: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.ENCRYPTIONMODE ENCRYPT_MODE_INVALID = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ENCRYPTIONMODE ENCRYPT_MODE_PLATFORM_DEFAULT = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ENCRYPTIONMODE ENCRYPT_MODE_ENGINE_DEFAULT = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ENCRYPTIONMODE ENCRYPT_MODE_PPC2003_COMPAT = 3 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.MEOPENINFO: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr pwszFileName : Assembly
+    IntPtr pwszPassword : Assembly
+    IntPtr pwszTempPath : Assembly
+    Int32 lcidLocale : Assembly
+    Int32 cbBufferPool : Assembly
+    Int32 fEncrypt : Assembly
+    Int32 dwAutoShrinkPercent : Assembly
+    Int32 dwFlushInterval : Assembly
+    Int32 cMaxPages : Assembly
+    Int32 cMaxTmpPages : Assembly
+    Int32 dwDefaultTimeout : Assembly
+    Int32 dwDefaultEscalation : Assembly
+    System.Data.SqlServerCe.SEOPENFLAGS dwFlags : Assembly
+    Int32 dwEncryptionMode : Assembly
+    Int32 dwLocaleFlags : Assembly
+Struct System.Data.SqlServerCe.MEDBBINDING: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 iOrdinal : Public
+    Int32 obValue : Public
+    Int32 obSize : Public
+    Int32 obStatus : Public
+    IntPtr pObject : Public
+    Int32 cbMaxLen : Public
+    UInt32 dwFlags : Public
+    System.Data.SqlServerCe.SETYPE type : Public
+    UInt32 bPrecision : Public
+    UInt32 bScale : Public
+    Int32 minor_pError : Public
+Struct System.Data.SqlServerCe.MEDBKEYINFO: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr pwszBaseColumnName : Public
+    UInt32 iOrdinal : Public
+    Int32 isUnique : Public
+    Int32 isKey : Public
+    Int32 isReadOnly : Public
+    Int32 isIdentity : Public
+Struct System.Data.SqlServerCe.tagDBOBJECT: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 dwFlags : Public
+    System.Guid iid : Public
+Struct System.Data.SqlServerCe.DB_NUMERIC: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte precision : Public
+    Byte scale : Public
+    Byte sign : Public
+    <val>e__FixedBuffer0 val : Public
+Struct System.Data.SqlServerCe.DB_NUMERIC+<val>e__FixedBuffer0: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte FixedElementField : Public
+Struct System.Data.SqlServerCe.DBTIMESTAMP: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int16 year : Public
+    UInt16 month : Public
+    UInt16 day : Public
+    UInt16 hour : Public
+    UInt16 minute : Public
+    UInt16 second : Public
+    UInt32 fraction : Public
+Struct System.Data.SqlServerCe.SEDATETIME: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 ulMSSinceMidnight : Public
+    Int32 lDaysSince1900 : Public
+Struct System.Data.SqlServerCe.SEPREPAREMODE: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SEPREPAREMODE PREP_INSERT = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEPREPAREMODE PREP_UPDATE = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEPREPAREMODE PREP_DELETE = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEPREPAREMODE PREP_CANCEL = 3 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEPREPAREMODE PREP_NONE = 3 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SETYPE: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SETYPE TINYINT = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE SMALLINT = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE UI2 = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE INTEGER = 3 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE UI4 = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE BIGINT = 5 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE UI8 = 6 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE NCHAR = 7 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE NVARCHAR = 8 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE NTEXT = 9 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE BINARY = 10 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE VARBINARY = 11 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE IMAGE = 12 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE DATETIME = 13 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE UNIQUEIDENTIFIER = 14 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE BIT = 15 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE REAL = 16 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE FLOAT = 17 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE MONEY = 18 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE NUMERIC = 19 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE ROWVERSION = 20 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE LAST = 21 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETYPE INVALID = 22 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SEFIXOPTION: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SEFIXOPTION SEFIX_OPTION_INVALID = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEFIXOPTION SEFIX_OPTION_COMPACT = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEFIXOPTION SEFIX_OPTION_SHRINK = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEFIXOPTION SEFIX_OPTION_VERIFY = 3 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEFIXOPTION SEFIX_OPTION_VERIFYEX = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEFIXOPTION SEFIX_OPTION_REPAIR = 5 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEFIXOPTION SEFIX_OPTION_STATS = 6 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEFIXOPTION SEFIX_OPTION_CLEAR_STATS = 7 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEFIXOPTION SEFIX_OPTION_UPGRADE = 8 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEFIXOPTION SEFIX_OPTION_LAST = 9 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SEOPENFLAGS: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SEOPENFLAGS MODE_READ = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOPENFLAGS MODE_WRITE = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOPENFLAGS MODE_SHARE_DENY_READ = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOPENFLAGS MODE_SHARE_DENY_WRITE = 8 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SELOCALEFLAGS: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SELOCALEFLAGS INVALID = -1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SELOCALEFLAGS SELOCALE_CASE_SENSITIVE = 1 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SEISOLATION: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SEISOLATION ISO_READ_COMMITTED = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEISOLATION ISO_REPEATABLE_READ = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEISOLATION ISO_SERIALIZABLE = 3 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEISOLATION ISO_DEFAULT = 1 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SEGETCOLUMN: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SEGETCOLUMN CURRENT = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEGETCOLUMN ORIGINAL = 1 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SECOLUMNATTRIB: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SECOLUMNATTRIB NAME = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SECOLUMNATTRIB IDCOL = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SECOLUMNATTRIB IDRANGE = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SECOLUMNATTRIB WRITEABLE = 16 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SECOLUMNATTRIB NULLABLE = 32 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SECOLUMNATTRIB TYPE = 64 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SECOLUMNATTRIB IDENTITY = 128 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SECOLUMNATTRIB IDNEXT = 256 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SECOLUMNATTRIB SYSCOL = 512 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SECOLUMNATTRIB IDRANGE1 = 1024 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SECOLUMNATTRIB IDRANGE2 = 2048 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.SECOLUMNINFO: AutoLayout, AnsiClass, Class, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    IntPtr pwszColumn : Public
+    UInt32 cchMax : Public
+    System.Data.SqlServerCe.SETYPE type : Public
+    UInt32 ulSize : Public
+    UInt32 bPrecision : Public
+    UInt32 bScale : Public
+    Int64 lSeed : Public
+    Int64 lStep : Public
+    Int32 fIsFixed : Public
+    Int32 fIsNullable : Public
+    Int32 fIsIdentity : Public
+    Int32 fIsRowGuid : Public
+    Int32 fIsWriteable : Public
+    Int32 fIsSystem : Public
+    Int32 fIsRowVersion : Public
+    Int64 lIdentityMin : Public
+    Int64 lIdentityMax : Public
+    Int64 lIdentityNext : Public
+    Int32 fMaybeNull : Public
+    IntPtr pwszBaseTable : Public
+    UInt32 cchMaxBaseTable : Public
+    IntPtr pwszBaseColumn : Public
+    UInt32 cchMaxBaseColumn : Public
+    UInt32 dwCedbPropId : Public
+    IntPtr pwszDefaultExpr : Public
+    UInt32 cchMaxDefaultExpr : Public
+    Int32 fHasDefault : Public
+    Int32 fIsExpression : Public
+    Int32 fCompressed : Public
+    Int64 lIdentityMinEx : Public
+    Int64 lIdentityMaxEx : Public
+    Int32 fUseExRange : Public
+    Int32 fUseOverflowRange : Public
+Struct System.Data.SqlServerCe.SETABLEATTRIBOPS: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SETABLEATTRIBOPS ALLOWALL = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS TABLERENAME = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS TABLEDELETE = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS COLUMNCREATE = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS COLUMNRENAME = 8 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS COLUMNDELETE = 16 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS INDEXCREATE = 32 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS INDEXRENAME = 64 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS INDEXDELETE = 128 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS CONSTRAINTCREATE = 256 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS CONSTRAINTDELETE = 512 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS PKCREATE = 2048 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS PKRENAME = 4096 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS PKDELETE = 8192 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS ALTERDEFAULTS = 16384 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS SWAPCOLUMNORDINALS = 32768 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS ALLOWNONE = 2147483648 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBOPS NEEDEDBITS = 2147549183 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SETABLEATTRIBS: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SETABLEATTRIBS TRACKING = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBS GRANTEDOPS = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBS ISSYSTEM = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBS EDBTYPE = 8 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBS ISREADONLY = 16 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETABLEATTRIBS VALIDATTRIBS = 31 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SEOCSTRACKOPTIONS: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SEOCSTRACKOPTIONS NONE = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOCSTRACKOPTIONS UPSERT = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOCSTRACKOPTIONS INSERTUPDATE = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOCSTRACKOPTIONS DELETE = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOCSTRACKOPTIONS COLUMNS = 8 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOCSTRACKOPTIONS ALL = 15 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.SEOCSTRACKOPTIONSV2: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SEOCSTRACKOPTIONSV2 NONE = 240 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOCSTRACKOPTIONSV2 INSERT = 16 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOCSTRACKOPTIONSV2 UPDATE = 32 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SEOCSTRACKOPTIONSV2 DELETE = 64 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.SETABLEINFO: AutoLayout, AnsiClass, Class, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    IntPtr pwszTable : Public
+    UInt32 cchMax : Public
+    Boolean fIsSystem : Public
+    Boolean fReadOnly : Public
+    UInt64 uhVersion : Public
+    Boolean fTemporary : Public
+    Boolean fOrdered : Public
+    Int64 lNextIdentity : Public
+    Boolean fIdentityOverflow : Public
+    UInt16 wTracking : Public
+    Int32 lTableNick : Public
+    UInt32 dwCedbType : Public
+    Int32 hBookmark : Public
+    UInt32 cPages : Public
+    UInt32 cLvPages : Public
+    UInt32 dwGrantedOps : Public
+    Boolean fHasDefaults : Public
+    Boolean fCompressed : Public
+    UInt32 cStatMods : Public
+Struct System.Data.SqlServerCe.SETRACKINGTYPE: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.SETRACKINGTYPE INVALID = -1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETRACKINGTYPE NONE = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETRACKINGTYPE PK = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.SETRACKINGTYPE ROWGUID = 2 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.QPPARAMTYPE: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.QPPARAMTYPE QPPARAM_INPUT = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.QPPARAMTYPE QPPARAM_OUTPUT = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.QPPARAMTYPE QPPARAM_INOUT = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.QPPARAMTYPE QPPARAM_RETURN = 3 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.QPPARAMINFO: AutoLayout, AnsiClass, Class, SequentialLayout, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    IntPtr pwszParam : Public
+    UInt32 cchMax : Public
+    UInt32 iOrdinal : Public
+    System.Data.SqlServerCe.QPPARAMTYPE paramType : Public
+    System.Data.SqlServerCe.SETYPE type : Public
+    UInt32 ulSize : Public
+    Byte bPrecision : Public
+    Byte bScale : Public
+    Int16 padding : Public
+    Int32 fIsTyped : Public
+Struct System.Data.SqlServerCe.FETCH: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.FETCH UNKNOWN = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.FETCH FORWARD = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.FETCH BACKWARD = 2 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.DIRECTION: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.DIRECTION MOVE_NEXT = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DIRECTION MOVE_PREVIOUS = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DIRECTION MOVE_FIRST = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.DIRECTION MOVE_LAST = 3 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.MetaData: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.String, System.Data.SqlServerCe.SqlCeType, Byte, Byte, Int64, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    UInt32 ordinal : Assembly
+    UInt32 size : Assembly
+    System.Object value : Assembly
+    Boolean isReadOnly : Assembly
+    Boolean isRowVersion : Assembly
+    Boolean isExpression : Assembly
+    Boolean isIdentity : Assembly
+    Boolean isUnique : Assembly
+    Boolean isKey : Assembly
+    Boolean isNullable : Assembly
+    Boolean hasDefault : Assembly
+    System.String baseTableName : Assembly
+    System.String baseColumnName : Assembly
+    System.Data.SqlServerCe.SqlCeType typeMap : Assembly
+  Properties:
+    System.Data.SqlServerCe.SqlMetaData SqlMetaData 'get ' : 
+    System.String ColumnName 'get ' : 
+  Methods:
+    get_SqlMetaData(): PrivateScope, Public, HideBySig, SpecialName
+    get_ColumnName(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.ValueMapper: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetMappedValue(SqlDbType, Object): PrivateScope, Public, Static, HideBySig
+Class System.Data.SqlServerCe.FlushFailureEventHandler: AutoLayout, AnsiClass, Class, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Int32, IntPtr, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.NativeMethods: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Fields:
+    System.String LOADLIB = kernel32.dll : Public, Static, Literal, HasDefault
+    System.String OLEAUT32 = oleaut32.dll : Public, Static, Literal, HasDefault
+    System.String OLE32 = ole32.dll : Public, Static, Literal, HasDefault
+  Methods:
+    OpenTransaction(IntPtr, IntPtr, SEISOLATION, IntPtr&, IntPtr&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CreateDatabase(IntPtr, IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    Rebuild(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, Int32, SEFIXOPTION, Int32, Int32, Int32, Int32, IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CreateErrorInstance(IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CheckHRESULT(IntPtr, Int32): PrivateScope, Public, Static, HideBySig
+    uwutil_ConvertToDBTIMESTAMP(DBTIMESTAMP&, UInt32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    uwutil_ConvertFromDBTIMESTAMP(DBTIMESTAMP, UInt32&, Int32&): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    uwutil_SysFreeString(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    uwutil_ReleaseCOMPtr(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    uwutil_get_ErrorCount(IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    uwutil_get_Error(IntPtr, Int32, Int32&(Out), IntPtr&(Out), Int32&(Out), IntPtr&(Out), Int32&(Out), Int32&(Out), Int32&(Out), IntPtr&(Out), IntPtr&(Out), IntPtr&(Out)): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    uwutil_ZeroMemory(IntPtr, Int32): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    MarshalStringToLPWSTR(String): PrivateScope, Assembly, Static, HideBySig
+    GetMinorErrorMessage(Int32): PrivateScope, Assembly, Static, HideBySig
+    GetSqlCeVersionInfo(IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    LoadLibrary(String): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CompareVersion(String, Int32&): PrivateScope, Assembly, Static, HideBySig
+    GetNativeVersionInfo(Int32&, Int32&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    LoadValidLibrary(String, Int32): PrivateScope, Assembly, Static, HideBySig
+    LoadNativeBinaries(): PrivateScope, Assembly, Static, HideBySig
+    GetDatabaseInstanceID(IntPtr, IntPtr&(Out), IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetEncryptionMode(IntPtr, Int32&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetLocale(IntPtr, Int32&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetLocaleFlags(IntPtr, Int32&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    DeleteRecord(IntPtr, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GotoBookmark(IntPtr, Int32, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetContextErrorInfo(IntPtr, Int32&, Int32&, IntPtr&, IntPtr&, Int32&, Int32&, Int32&, IntPtr&, IntPtr&, IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetContextErrorMessage(Int32, IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetMinorError(IntPtr, Int32&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetBookmark(IntPtr, Int32&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetColumnInfo(IntPtr, Int32&, IntPtr&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    SetColumnInfo(IntPtr, String(HasFieldMarshal), String(HasFieldMarshal), SECOLUMNINFO, SECOLUMNATTRIB, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    SetTableInfoAsSystem(IntPtr, String(HasFieldMarshal), IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetParameterInfo(IntPtr, UInt32&, IntPtr&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetIndexColumnOrdinals(IntPtr, IntPtr, UInt32&, IntPtr&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetKeyInfo(IntPtr, IntPtr, String(HasFieldMarshal), IntPtr, Int32, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CoTaskMemAlloc(Int32): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CoTaskMemFree(IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CreateCommand(IntPtr, IntPtr&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CompileQueryPlan(IntPtr, String(HasFieldMarshal), ResultSetOptions, IntPtr[], IntPtr, Int32, IntPtr&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    Move(IntPtr, DIRECTION, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    Failed(Int32): PrivateScope, Assembly, Static, HideBySig
+    OpenCursor(IntPtr, IntPtr, IntPtr, IntPtr&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetValues(IntPtr, Int32, IntPtr, Int32, IntPtr, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    Read(IntPtr, Void*, Int32, Int32, Int32&(Out), IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    ReadAt(IntPtr, Int32, Void*, Int32, Int32, Int32&(Out), IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    Seek(IntPtr, IntPtr, IntPtr, Int32, IntPtr, Int32, Int32, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    SetRange(IntPtr, IntPtr, IntPtr, Int32, IntPtr, Int32, IntPtr, Int32, Int32, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    SafeRelease(IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    SafeDelete(IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    DeleteArray(IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    OpenStore(IntPtr, IntPtr, IntPtr&, IntPtr&, IntPtr&, IntPtr&, IntPtr&, IntPtr&, IntPtr&, IntPtr&, IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CloseStore(IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    AbortTransaction(IntPtr, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CommitTransaction(IntPtr, CommitMode, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    SetTransactionFlag(IntPtr, SeTransactionFlags, Boolean, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetTransactionFlags(IntPtr, SeTransactionFlags&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetTrackingContext(IntPtr, IntPtr&(Out), IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    SetTrackingContext(IntPtr, IntPtr&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetTransactionBsn(IntPtr, Int64&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    InitChangeTracking(IntPtr, IntPtr&, IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    ExitChangeTracking(IntPtr&, IntPtr&): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    EnableChangeTracking(IntPtr, String(HasFieldMarshal), SETRACKINGTYPE, SEOCSTRACKOPTIONS, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetTrackingOptions(IntPtr, String(HasFieldMarshal), SEOCSTRACKOPTIONSV2&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    DisableChangeTracking(IntPtr, String(HasFieldMarshal), IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    IsTableChangeTracked(IntPtr, String(HasFieldMarshal), Boolean&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetChangeTrackingInfo(IntPtr, String(HasFieldMarshal), SEOCSTRACKOPTIONS&, SETRACKINGTYPE&, Int64&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CleanupTrackingMetadata(IntPtr, String(HasFieldMarshal), Int32, Int64, Int64, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CleanupTransactionData(IntPtr, Int32, Int64, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    CleanupTombstoneData(IntPtr, String(HasFieldMarshal), Int32, Int64, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetCurrentTrackingTxCsn(IntPtr, Int64&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    GetCurrentTrackingTxBsn(IntPtr, Int64&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    DllAddRef(): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    DllRelease(): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    ClearErrorInfo(IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    ExecuteQueryPlan(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, Int32, IntPtr, Int32&, ResultSetOptions&, IntPtr&, Int32&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    SetValues(IntPtr, IntPtr, IntPtr, Int32, IntPtr, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    SetValue(IntPtr, Int32, Void*, Int32, Int32, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    Prepare(IntPtr, SEPREPAREMODE, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    InsertRecord(Int32, IntPtr, Int32&, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+    UpdateRecord(IntPtr, IntPtr): PrivateScope, Assembly, Static, HideBySig, PinvokeImpl
+Class System.Data.SqlServerCe.SqlCeException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.SystemException
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Data.SqlServerCe.SqlCeErrorCollection errors : Assembly
+  Properties:
+    System.Data.SqlServerCe.SqlCeErrorCollection Errors 'get ' : 
+    Int32 HResult 'get ' : 
+    Int32 NativeError 'get ' : 
+    System.String Message 'get ' : 
+    System.String Source 'get ' : 
+  Methods:
+    FillErrorInformation(Int32, IntPtr): PrivateScope, Assembly, Static, HideBySig
+    FillErrorCollection(Int32, IntPtr): PrivateScope, Assembly, Static, HideBySig
+    CreateException(SqlCeErrorCollection): PrivateScope, Assembly, Static, HideBySig
+    CreateException(String): PrivateScope, Assembly, Static, HideBySig
+    CreateException(String, Exception): PrivateScope, Assembly, Static, HideBySig
+    get_Errors(): PrivateScope, Public, HideBySig, SpecialName
+    get_HResult(): PrivateScope, Public, HideBySig, SpecialName
+    get_NativeError(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Data.SqlServerCe.SqlCeLockTimeoutException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Data.SqlServerCe.SqlCeException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.Data.SqlServerCe.SqlCeTransactionInProgressException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Data.SqlServerCe.SqlCeException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.Data.SqlServerCe.SqlCeInvalidDatabaseFormatException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Data.SqlServerCe.SqlCeException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.Data.SqlServerCe.SqlCeInfoMessageEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SqlCeInfoMessageEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SqlCeInfoMessageEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.SqlCeRowUpdatedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SqlCeRowUpdatedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SqlCeRowUpdatedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.SqlCeFlushFailureEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SqlCeFlushFailureEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SqlCeFlushFailureEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.SqlCeRowUpdatedEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Data.Common.RowUpdatedEventArgs
+    Void .ctor(System.Data.DataRow, System.Data.IDbCommand, System.Data.StatementType, System.Data.Common.DataTableMapping): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Data.SqlServerCe.SqlCeCommand Command 'get ' : 
+  Methods:
+    get_Command(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Data.SqlServerCe.SqlCeRowUpdatingEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SqlCeRowUpdatingEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SqlCeRowUpdatingEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.SqlCeInfoMessageEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Int32, IntPtr, System.Object): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Data.SqlServerCe.SqlCeErrorCollection Errors 'get ' : 
+    System.String Message 'get ' : 
+  Methods:
+    get_Errors(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Data.SqlServerCe.SqlCeFlushFailureEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Int32, IntPtr, System.Object): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Data.SqlServerCe.SqlCeErrorCollection Errors 'get ' : 
+    System.String Message 'get ' : 
+  Methods:
+    get_Errors(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Data.SqlServerCe.SqlCeErrorCollection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.ICollection
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    System.Data.SqlServerCe.SqlCeError Item [Int32] 'get ' : 
+  Methods:
+    FillErrorInformation(Int32, IntPtr): PrivateScope, Assembly, HideBySig
+    FillErrorCollection(Int32, IntPtr): PrivateScope, Assembly, HideBySig
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Add(SqlCeError): PrivateScope, Assembly, HideBySig
+    CopyTo(Array, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Data.SqlServerCe.SqlCeDataAdapter: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Data.Common.DbDataAdapter
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlServerCe.SqlCeCommand): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlServerCe.SqlCeConnection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Data.SqlServerCe.SqlCeCommand DeleteCommand 'get set' : 
+    System.Data.SqlServerCe.SqlCeCommand InsertCommand 'get set' : 
+    System.Data.SqlServerCe.SqlCeCommand SelectCommand 'get set' : 
+    System.Data.SqlServerCe.SqlCeCommand UpdateCommand 'get set' : 
+  Events:
+    System.Data.SqlServerCe.SqlCeRowUpdatedEventHandler RowUpdated: 
+    System.Data.SqlServerCe.SqlCeRowUpdatingEventHandler RowUpdating: 
+  Methods:
+    get_DeleteCommand(): PrivateScope, Public, HideBySig, SpecialName
+    set_DeleteCommand(SqlCeCommand): PrivateScope, Public, HideBySig, SpecialName
+    get_InsertCommand(): PrivateScope, Public, HideBySig, SpecialName
+    set_InsertCommand(SqlCeCommand): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectCommand(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectCommand(SqlCeCommand): PrivateScope, Public, HideBySig, SpecialName
+    get_UpdateCommand(): PrivateScope, Public, HideBySig, SpecialName
+    set_UpdateCommand(SqlCeCommand): PrivateScope, Public, HideBySig, SpecialName
+    add_RowUpdated(SqlCeRowUpdatedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RowUpdated(SqlCeRowUpdatedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RowUpdating(SqlCeRowUpdatingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RowUpdating(SqlCeRowUpdatingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+Class System.Data.SqlServerCe.SqlCeRowUpdatingEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Data.Common.RowUpdatingEventArgs
+    Void .ctor(System.Data.DataRow, System.Data.IDbCommand, System.Data.StatementType, System.Data.Common.DataTableMapping): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Data.SqlServerCe.SqlCeCommand Command 'get set' : 
+  Methods:
+    get_Command(): PrivateScope, Public, HideBySig, SpecialName
+    set_Command(SqlCeCommand): PrivateScope, Public, HideBySig, SpecialName
+Class System.Data.SqlServerCe.ResultSetView: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.Data.SqlServerCe.SqlCeResultSet): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.ComponentModel.ITypedList
+    System.ComponentModel.IBindingList
+    System.Collections.IList
+    System.Collections.ICollection
+    System.Collections.IEnumerable
+    System.IDisposable
+  Properties:
+    System.Data.SqlServerCe.SqlCeResultSet SqlCeResultSet 'get ' : 
+    System.String[] Columns 'get set' : 
+    Int32[] Ordinals 'get set' : 
+  Events:
+    System.ComponentModel.ListChangedEventHandler ListChanged: 
+  Methods:
+    get_SqlCeResultSet(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Columns(): PrivateScope, Public, HideBySig, SpecialName
+    set_Columns(String[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Ordinals(): PrivateScope, Public, HideBySig, SpecialName
+    set_Ordinals(Int32[]): PrivateScope, Public, HideBySig, SpecialName
+    add_ListChanged(ListChangedEventHandler): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_ListChanged(ListChangedEventHandler): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class System.Data.SqlServerCe.DataColumnPropertyDescriptor: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.PropertyDescriptor
+    Void .ctor(Int32, System.Data.SqlServerCe.SqlCeResultSet, Boolean): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type ComponentType 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    System.Type PropertyType 'get ' : 
+  Methods:
+    get_ComponentType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_PropertyType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    CanResetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    GetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    ResetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    SetValue(Object, Object): PrivateScope, Public, Virtual, HideBySig
+    ShouldSerializeValue(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.Data.SqlServerCe.ResultSetEnumerator: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.Data.SqlServerCe.SqlCeResultSet): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerator
+  Fields:
+    System.Data.SqlServerCe.SqlCeResultSet _resultset : Assembly
+    System.Data.SqlServerCe.SqlCeUpdatableRecord _current : Assembly
+  Properties:
+    System.Data.SqlServerCe.SqlCeUpdatableRecord Current 'get ' : 
+  Methods:
+    get_Current(): PrivateScope, Public, HideBySig, SpecialName
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Reset(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct System.Data.SqlServerCe.ResultSetOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.ResultSetOptions None = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ResultSetOptions Updatable = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ResultSetOptions Scrollable = 2 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ResultSetOptions Sensitive = 4 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ResultSetOptions Insensitive = 8 : Public, Static, Literal, HasDefault
+Struct System.Data.SqlServerCe.ResultSetSensitivity: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Data.SqlServerCe.ResultSetSensitivity Asensitive = 0 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ResultSetSensitivity Insensitive = 1 : Public, Static, Literal, HasDefault
+    System.Data.SqlServerCe.ResultSetSensitivity Sensitive = 2 : Public, Static, Literal, HasDefault
+Class System.Data.SqlServerCe.FieldNameLookup: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(System.String[], Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.IDataReader, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetOrdinal(String): PrivateScope, Public, HideBySig
+    IndexOfName(String): PrivateScope, Public, HideBySig
+    IndexOf(String): PrivateScope, Public, HideBySig
+Class System.Data.SqlServerCe.SqlMetaData: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.String, System.Data.SqlDbType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlDbType, Int64): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlDbType, Byte, Byte): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlDbType, Int64, Int64, System.Data.SqlTypes.SqlCompareOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Data.SqlDbType, Int64, Byte, Byte, Int64, System.Data.SqlTypes.SqlCompareOptions, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Data.SqlServerCe.SqlMetaData[] sxm_rgDefaults : Assembly, Static
+  Properties:
+    System.Data.SqlTypes.SqlCompareOptions CompareOptions 'get ' : 
+    System.Data.DbType DbType 'get ' : 
+    Int64 LocaleId 'get ' : 
+    Int64 Max  'get ' : 
+    Int64 MaxLength 'get ' : 
+    System.String Name 'get ' : 
+    Byte Precision 'get ' : 
+    Byte Scale 'get ' : 
+    System.Data.SqlDbType SqlDbType 'get ' : 
+    System.String TypeName 'get ' : 
+    Boolean IsPartialLength 'get ' : 
+  Methods:
+    get_CompareOptions(): PrivateScope, Public, HideBySig, SpecialName
+    get_DbType(): PrivateScope, Public, HideBySig, SpecialName
+    get_LocaleId(): PrivateScope, Public, HideBySig, SpecialName
+    get_Max(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MaxLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_Precision(): PrivateScope, Public, HideBySig, SpecialName
+    get_Scale(): PrivateScope, Public, HideBySig, SpecialName
+    get_SqlDbType(): PrivateScope, Public, HideBySig, SpecialName
+    get_TypeName(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsPartialLength(): PrivateScope, Assembly, HideBySig, SpecialName
+    Adjust(Int16): PrivateScope, Public, HideBySig
+    Adjust(Int32): PrivateScope, Public, HideBySig
+    Adjust(Int64): PrivateScope, Public, HideBySig
+    Adjust(Single): PrivateScope, Public, HideBySig
+    Adjust(Double): PrivateScope, Public, HideBySig
+    Adjust(String): PrivateScope, Public, HideBySig
+    Adjust(Decimal): PrivateScope, Public, HideBySig
+    Adjust(DateTime): PrivateScope, Public, HideBySig
+    Adjust(Guid): PrivateScope, Public, HideBySig
+    Adjust(SqlBoolean): PrivateScope, Public, HideBySig
+    Adjust(SqlByte): PrivateScope, Public, HideBySig
+    Adjust(SqlInt16): PrivateScope, Public, HideBySig
+    Adjust(SqlInt32): PrivateScope, Public, HideBySig
+    Adjust(SqlInt64): PrivateScope, Public, HideBySig
+    Adjust(SqlSingle): PrivateScope, Public, HideBySig
+    Adjust(SqlDouble): PrivateScope, Public, HideBySig
+    Adjust(SqlMoney): PrivateScope, Public, HideBySig
+    Adjust(SqlDateTime): PrivateScope, Public, HideBySig
+    Adjust(SqlDecimal): PrivateScope, Public, HideBySig
+    Adjust(SqlString): PrivateScope, Public, HideBySig
+    Adjust(SqlBinary): PrivateScope, Public, HideBySig
+    Adjust(SqlGuid): PrivateScope, Public, HideBySig
+    Adjust(SqlChars): PrivateScope, Public, HideBySig
+    Adjust(SqlBytes): PrivateScope, Public, HideBySig
+    Adjust(Object): PrivateScope, Public, HideBySig
+    Adjust(Boolean): PrivateScope, Public, HideBySig
+    Adjust(Byte): PrivateScope, Public, HideBySig
+    Adjust(Byte[]): PrivateScope, Public, HideBySig
+    Adjust(Char): PrivateScope, Public, HideBySig
+    Adjust(Char[]): PrivateScope, Public, HideBySig
+Class System.Data.SqlServerCe.SqlCeProviderFactory: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Data.Common.DbProviderFactory
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IServiceProvider
+  Fields:
+    System.Data.SqlServerCe.SqlCeProviderFactory Instance : Public, Static, InitOnly
+  Methods:
+    CreateCommand(): PrivateScope, Public, Virtual, HideBySig
+    CreateCommandBuilder(): PrivateScope, Public, Virtual, HideBySig
+    CreateConnection(): PrivateScope, Public, Virtual, HideBySig
+    CreateDataAdapter(): PrivateScope, Public, Virtual, HideBySig
+    CreateParameter(): PrivateScope, Public, Virtual, HideBySig
+Class System.Data.SqlServerCe.SqlCeRestriction: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CheckExplicitWebHosting(): PrivateScope, Public, Static, HideBySig
+Class System.Data.SqlServerCe.SqlCeDelegatedTransaction: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(System.Data.SqlServerCe.SqlCeConnection, System.Transactions.Transaction): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Transactions.IPromotableSinglePhaseNotification
+    System.Transactions.ITransactionPromoter
+  Properties:
+    System.Transactions.Transaction Transaction 'get ' : 
+    System.Data.SqlServerCe.SqlCeTransaction SqlCeTransaction 'get set' : 
+  Methods:
+    get_Transaction(): PrivateScope, Assembly, HideBySig, SpecialName
+    Initialize(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    PromotionFailed(Exception): PrivateScope, Assembly, Static, HideBySig
+    Promote(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Rollback(SinglePhaseEnlistment): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SinglePhaseCommit(SinglePhaseEnlistment): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_SqlCeTransaction(): PrivateScope, Public, HideBySig, SpecialName
+    set_SqlCeTransaction(SqlCeTransaction): PrivateScope, Public, HideBySig, SpecialName
+Class System.Data.SqlServerCe.ExtensionMethods: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.Type SystemDataCommonDbProviderServices_Type : Assembly, Static
+  Methods:
+    SystemDataSqlServerCeSqlCeProviderServices_Instance(): PrivateScope, Assembly, Static, HideBySig
+Class System.Data.SqlServerCe.Res: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Fields:
+    System.String SQLCE_WebHostingRestriction = SQLCE_WebHostingRestriction : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_ConflictingSensitivityOptions = SQLCE_ConflictingSensitivityOptions : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_InsensitiveBaseTableCursor = SQLCE_InsensitiveBaseTableCursor : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_MissingQueryParameters = SQLCE_MissingQueryParameters : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_InvalidOperationInHostedContext = SQLCE_InvalidOperationInHostedContext : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_TooManyParameters = SQLCE_TooManyParameters : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_TooManyCommandParameters = SQLCE_TooManyCommandParameters : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_TooFewCommandParameters = SQLCE_TooFewCommandParameters : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_ConnectionStringNotInitialized = SQLCE_ConnectionStringNotInitialized : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_CursorNotScrollable = SQLCE_CursorNotScrollable : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_CursorNotUpdatable = SQLCE_CursorNotUpdatable : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_InvalidBaseColumnType = SQLCE_InvalidBaseColumnType : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_OrdinalOutOfRange = SQLCE_OrdinalOutOfRange : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_UndefinedDefaultValue = SQLCE_UndefinedDefaultValue : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_DataIndexTooLarge = SQLCE_DataIndexTooLarge : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_TooManyBytesAvailable = SQLCE_TooManyBytesAvailable : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_TooManyCharsAvailable = SQLCE_TooManyCharsAvailable : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_ArgumentOutOfRange = SQLCE_ArgumentOutOfRange : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_DataColumn_SetFailed = SQLCE_DataColumn_SetFailed : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_IndexNameNotSpecified = SQLCE_IndexNameNotSpecified : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_InvalidDataType = SQLCE_InvalidDataType : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_HasRowsScrollabilityRequirement = SQLCE_HasRowsScrollabilityRequirement : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_InvalidValueForKeyValue = SQLCE_InvalidValueForKeyValue : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_UnableToFetchDefaultValue = SQLCE_UnableToFetchDefaultValue : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_OpenedCursorsOnTxCommit = SQLCE_OpenedCursorsOnTxCommit : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_OpenedCursorsOnTxAbort = SQLCE_OpenedCursorsOnTxAbort : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_OpenedCursorsOnTxChange = SQLCE_OpenedCursorsOnTxChange : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_DeletedRow = SQLCE_DeletedRow : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_ColumnContainsDbNullValue = SQLCE_ColumnContainsDbNullValue : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_CantLoadEntityDll = SQLCE_CantLoadEntityDll : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_WrongTrackingVersion = SQLCE_WrongTrackingVersion : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_WrongCleanupSequence = SQLCE_WrongCleanupSequence : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_IncorrectValue = SQLCE_IncorrectValue : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_FormatException = SQLCE_FormatException : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_NoTable = SQLCE_NoTable : Assembly, Static, Literal, HasDefault
+    System.String SQLCE_NoPrimaryKey = SQLCE_NoPrimaryKey : Assembly, Static, Literal, HasDefault
+    System.String SQL_SqlRecordReadOnly = SQL_SqlRecordReadOnly : Assembly, Static, Literal, HasDefault
+    System.String SQL_SqlResultSetClosed = SQL_SqlResultSetClosed : Assembly, Static, Literal, HasDefault
+    System.String SQL_InvalidConStringOption = SQL_InvalidConStringOption : Assembly, Static, Literal, HasDefault
+    System.String SQL_InvalidConnectionOptionValue = SQL_InvalidConnectionOptionValue : Assembly, Static, Literal, HasDefault
+    System.String SQL_InvalidDataLength = SQL_InvalidDataLength : Assembly, Static, Literal, HasDefault
+    System.String SQL_InvalidParameterNameLength = SQL_InvalidParameterNameLength : Assembly, Static, Literal, HasDefault
+    System.String SQL_PrecisionValueOutOfRange = SQL_PrecisionValueOutOfRange : Assembly, Static, Literal, HasDefault
+    System.String SQL_ScaleValueOutOfRange = SQL_ScaleValueOutOfRange : Assembly, Static, Literal, HasDefault
+    System.String SQL_InvalidBufferSizeOrIndex = SQL_InvalidBufferSizeOrIndex : Assembly, Static, Literal, HasDefault
+    System.String Expr_DatatypeConvertion = Expr_DatatypeConvertion : Assembly, Static, Literal, HasDefault
+    System.String SqlMisc_InvalidPrecScaleMessage = SqlMisc_InvalidPrecScaleMessage : Assembly, Static, Literal, HasDefault
+    System.String OleDb_BadAccessor = OleDb_BadAccessor : Assembly, Static, Literal, HasDefault
+    System.String OleDb_BadStatus = OleDb_BadStatus : Assembly, Static, Literal, HasDefault
+    System.String OleDb_CantConvertValue = OleDb_CantConvertValue : Assembly, Static, Literal, HasDefault
+    System.String OleDb_SignMismatch = OleDb_SignMismatch : Assembly, Static, Literal, HasDefault
+    System.String OleDb_DataOverflow = OleDb_DataOverflow : Assembly, Static, Literal, HasDefault
+    System.String OleDb_CantCreate = OleDb_CantCreate : Assembly, Static, Literal, HasDefault
+    System.String OleDb_Unavailable = OleDb_Unavailable : Assembly, Static, Literal, HasDefault
+    System.String OleDb_UnexpectedStatusValue = OleDb_UnexpectedStatusValue : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidImplicitConversion = ADP_InvalidImplicitConversion : Assembly, Static, Literal, HasDefault
+    System.String ADP_CollectionIsNotParent = ADP_CollectionIsNotParent : Assembly, Static, Literal, HasDefault
+    System.String ADP_CollectionIsParent = ADP_CollectionIsParent : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenReaderExists = ADP_OpenReaderExists : Assembly, Static, Literal, HasDefault
+    System.String ADP_ConnectionStringSyntax = ADP_ConnectionStringSyntax : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidCommandType = ADP_InvalidCommandType : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidCommandTimeOut = ADP_InvalidCommandTimeOut : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidUpdateRowSource = ADP_InvalidUpdateRowSource : Assembly, Static, Literal, HasDefault
+    System.String ADP_CommandTextRequired = ADP_CommandTextRequired : Assembly, Static, Literal, HasDefault
+    System.String ADP_CommandIsActive = ADP_CommandIsActive : Assembly, Static, Literal, HasDefault
+    System.String ADP_ConnectionRequired_Prepare = ADP_ConnectionRequired_Prepare : Assembly, Static, Literal, HasDefault
+    System.String ADP_ConnectionRequired_ExecuteReader = ADP_ConnectionRequired_ExecuteReader : Assembly, Static, Literal, HasDefault
+    System.String ADP_ConnectionRequired_ExecuteNonQuery = ADP_ConnectionRequired_ExecuteNonQuery : Assembly, Static, Literal, HasDefault
+    System.String ADP_ConnectionRequired_ExecuteScalar = ADP_ConnectionRequired_ExecuteScalar : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionRequired_Prepare = ADP_OpenConnectionRequired_Prepare : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionRequired_SetConnection = ADP_OpenConnectionRequired_SetConnection : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionRequired_ExecuteReader = ADP_OpenConnectionRequired_ExecuteReader : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionRequired_ExecuteNonQuery = ADP_OpenConnectionRequired_ExecuteNonQuery : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionRequired_ExecuteScalar = ADP_OpenConnectionRequired_ExecuteScalar : Assembly, Static, Literal, HasDefault
+    System.String ADP_NoQuoteChange = ADP_NoQuoteChange : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidQuotePrefix = ADP_InvalidQuotePrefix : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidQuoteSuffix = ADP_InvalidQuoteSuffix : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidSchemaSeparator = ADP_InvalidSchemaSeparator : Assembly, Static, Literal, HasDefault
+    System.String ADP_MissingSourceCommand = ADP_MissingSourceCommand : Assembly, Static, Literal, HasDefault
+    System.String ADP_MissingSourceCommandConnection = ADP_MissingSourceCommandConnection : Assembly, Static, Literal, HasDefault
+    System.String ADP_DynamicSQLNoTableInfo = ADP_DynamicSQLNoTableInfo : Assembly, Static, Literal, HasDefault
+    System.String ADP_DynamicSQLJoinUnsupported = ADP_DynamicSQLJoinUnsupported : Assembly, Static, Literal, HasDefault
+    System.String ADP_DynamicSQLNoKeyInfo = ADP_DynamicSQLNoKeyInfo : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionPropertySet = ADP_OpenConnectionPropertySet : Assembly, Static, Literal, HasDefault
+    System.String ADP_ParallelTransactionsNotSupported = ADP_ParallelTransactionsNotSupported : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidIsolationLevel = ADP_InvalidIsolationLevel : Assembly, Static, Literal, HasDefault
+    System.String ADP_EmptyDatabaseName = ADP_EmptyDatabaseName : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionRequired_BeginTransaction = ADP_OpenConnectionRequired_BeginTransaction : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionRequired_ChangeDatabase = ADP_OpenConnectionRequired_ChangeDatabase : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionRequired_CommitTransaction = ADP_OpenConnectionRequired_CommitTransaction : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionRequired_RollbackTransaction = ADP_OpenConnectionRequired_RollbackTransaction : Assembly, Static, Literal, HasDefault
+    System.String ADP_OpenConnectionRequired_GetDatabaseInfo = ADP_OpenConnectionRequired_GetDatabaseInfo : Assembly, Static, Literal, HasDefault
+    System.String ADP_NoConnectionString = ADP_NoConnectionString : Assembly, Static, Literal, HasDefault
+    System.String ADP_ConnectionAlreadyOpen = ADP_ConnectionAlreadyOpen : Assembly, Static, Literal, HasDefault
+    System.String ADP_TransactionRequired_Execute = ADP_TransactionRequired_Execute : Assembly, Static, Literal, HasDefault
+    System.String ADP_TransactionConnectionMismatch = ADP_TransactionConnectionMismatch : Assembly, Static, Literal, HasDefault
+    System.String ADP_ConnectionNotEnlisted = ADP_ConnectionNotEnlisted : Assembly, Static, Literal, HasDefault
+    System.String ADP_TransactionCompleted = ADP_TransactionCompleted : Assembly, Static, Literal, HasDefault
+    System.String ADP_DataReaderClosed = ADP_DataReaderClosed : Assembly, Static, Literal, HasDefault
+    System.String ADP_DataReaderNoData = ADP_DataReaderNoData : Assembly, Static, Literal, HasDefault
+    System.String ADP_NonSequentialColumnAccess = ADP_NonSequentialColumnAccess : Assembly, Static, Literal, HasDefault
+    System.String ADP_NonSeqByteAccess = ADP_NonSeqByteAccess : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidSourceBufferIndex = ADP_InvalidSourceBufferIndex : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidDestinationBufferIndex = ADP_InvalidDestinationBufferIndex : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidParameterDirection = ADP_InvalidParameterDirection : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidSizeValue = ADP_InvalidSizeValue : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidPrefixSuffix = ADP_InvalidPrefixSuffix : Assembly, Static, Literal, HasDefault
+    System.String ADP_ParameterSizeUnspecified = ADP_ParameterSizeUnspecified : Assembly, Static, Literal, HasDefault
+    System.String ADP_ParameterNotSpecified = ADP_ParameterNotSpecified : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidDataRowVersion = ADP_InvalidDataRowVersion : Assembly, Static, Literal, HasDefault
+    System.String ADP_CollectionIndexString = ADP_CollectionIndexString : Assembly, Static, Literal, HasDefault
+    System.String ADP_CollectionRemoveInvalidObject = ADP_CollectionRemoveInvalidObject : Assembly, Static, Literal, HasDefault
+    System.String ADP_CollectionNullValue = ADP_CollectionNullValue : Assembly, Static, Literal, HasDefault
+    System.String ADP_CollectionInvalidType = ADP_CollectionInvalidType : Assembly, Static, Literal, HasDefault
+    System.String ADP_TransactionZombied = ADP_TransactionZombied : Assembly, Static, Literal, HasDefault
+    System.String ADP_UnknownDataType = ADP_UnknownDataType : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidDataType = ADP_InvalidDataType : Assembly, Static, Literal, HasDefault
+    System.String ADP_TruncatedBytes = ADP_TruncatedBytes : Assembly, Static, Literal, HasDefault
+    System.String ADP_TruncatedString = ADP_TruncatedString : Assembly, Static, Literal, HasDefault
+    System.String ADP_InvalidDataLength2 = ADP_InvalidDataLength2 : Assembly, Static, Literal, HasDefault
+    System.String ADP_LocalTransactionPresent = ADP_LocalTransactionPresent : Assembly, Static, Literal, HasDefault
+    System.String ADP_FileVersionMismatch = ADP_FileVersionMismatch : Assembly, Static, Literal, HasDefault
+    System.String ADP_LoadNativeBinaryFail = ADP_LoadNativeBinaryFail : Assembly, Static, Literal, HasDefault
+    System.String ADP_NoErrorInfoPresent = ADP_NoErrorInfoPresent : Assembly, Static, Literal, HasDefault
+  Methods:
+    GetString(String, Object[]): PrivateScope, Public, Static, HideBySig
+    GetString(CultureInfo, String, Object[]): PrivateScope, Public, Static, HideBySig
+    GetString(String): PrivateScope, Public, Static, HideBySig
+    GetString(CultureInfo, String): PrivateScope, Public, Static, HideBySig

@@ -1,0 +1,3 @@
+Declare @MemberRowID  int = 0, @PolicyNo_fk varchar(50) = ''
+select top 1 @MemberRowID = MemberRowID,@PolicyNo_fk = PolicyNo_fk from tmMbr where CertNo_ky = '^'
+EXEC [sp_Get_Members_Detailed_Info_RowID] @MemberRowID,@PolicyNo_fk

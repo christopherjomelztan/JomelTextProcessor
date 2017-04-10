@@ -1,0 +1,1 @@
+select FullName,LoginName,Password from tbl_Users where FullName like '%^%'

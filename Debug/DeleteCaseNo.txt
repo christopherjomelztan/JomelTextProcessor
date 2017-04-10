@@ -1,0 +1,8 @@
+Declare @CaseNo varchar(50) = '201701061912'
+
+delete from tbl_mgp_cases where CaseNo = @CaseNo
+delete from tbl_MGP_Summ_Charges where CaseNo = @CaseNo
+delete from tbl_MGP_Cases_LOA where CaseNo = @CaseNo
+delete from tbl_MGP_Cases_Notes where CaseNo = @CaseNo
+delete from tbl_MGP_Cases_Progress where CaseNo = @CaseNo 
+delete from tbl_mgp_cASES_JV where ClaimNo = @CaseNo
